@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer} from "react-leaflet";
-import 'node_modules/leaflet-geosearch/dist/geosearch.css';
 
 export default function App() {
   return (
