@@ -1,15 +1,22 @@
 import React from 'react';
 import './App.css';
-import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer} from "react-leaflet";
+import LoginButton from './components/login-button';
+import LogoutButton from './components/logout-button';
+import MapCont from './components/mapcontainer';
+import SignupButton from './components/signup-button';
 
-export default function App() {
+function App() {
+
+
   return (
-    <MapContainer center={[43.038429, -87.897491]} zoom={12} style={{width:"100%", height:"100vh" }}>
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-  />
-    </MapContainer>
-  );
+    
+    <>
+      <LoginButton/>
+      <LogoutButton/>
+      <SignupButton/>
+      <MapCont/>
+    </>
+  );  
 }
+
+export default App;
