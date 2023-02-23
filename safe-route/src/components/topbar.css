@@ -12,15 +12,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
+    gap: 1rem;
+    padding: 0 .5rem;
 }
 
 .bar ul {
     padding: 0;
     margin: 0;
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 1rem;
 }
 
