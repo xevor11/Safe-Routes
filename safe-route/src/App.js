@@ -27,7 +27,7 @@ function App() {
   }
 
   if(navigator.geolocation){
-    navigator.geolocation.getCurrentPosition(successCallback, errorCallback, options);
+    navigator.geolocation.watchPosition(successCallback, errorCallback, options);
   }
 
   return (
