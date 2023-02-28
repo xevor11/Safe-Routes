@@ -8,8 +8,8 @@ export default function SearchBar() {
 
     function onPlaceSelect(value) {
         let coords = [value.properties.lat, value.properties.lon];
-        Recenter(lat=coords[0], lng=coords[1]);
         console.log(coords);
+        Recenter(coords[0], coords[1]);
     }
 
     function onSuggestionChange(value) {

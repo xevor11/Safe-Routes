@@ -6,6 +6,10 @@ import Recenter from './recenter';
 
 const MapCont = ({ lat, lng }) => {
 
+  const { coords, setCoords } = useState([lat, lng]);
+
+  
+
   return (
     <MapContainer center={[lat, lng]} zoom={12} style={{ width: "100%", height: "100vh" }}>
       <TileLayer
