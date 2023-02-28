@@ -1,7 +1,7 @@
 import {React, useState, useEffect } from 'react';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
-import { destinationIcon } from './icons/dest-icon';
+import { currentLocIcon } from './icons/loc-icon';
 
 
 const Recenter = ({lat, lng}) => {
@@ -21,7 +21,7 @@ const MapCont = ({lat, lng}) => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[lat, lng]} icon={destinationIcon}></Marker>
+      <Marker position={[lat, lng]} icon={currentLocIcon}></Marker>
       <Recenter lat={lat} lng={lng}></Recenter>
     </MapContainer>
   );
