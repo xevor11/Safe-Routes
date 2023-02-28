@@ -31,7 +31,10 @@ function App() {
   }
 
   return (
-      <MapCont lat={coords[0]} lng={coords[1]}/>
+      <>
+        <TopBar/>
+        <MapCont lat={coords[0]} lng={coords[1]}/>
+      </>
   );  
   
 }
