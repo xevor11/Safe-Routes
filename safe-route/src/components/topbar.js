@@ -11,8 +11,7 @@ export default function TopBar() {
         <nav className="bar">SafeRoute
             <ul>
                 <li>
-                    <div><SearchBar/></div>
-                    
+                    <SearchBar/>   
                 </li>
                 <li>
                     <div><LoginButton/></div>

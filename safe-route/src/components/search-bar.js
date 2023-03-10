@@ -1,5 +1,6 @@
 import React from "react";
 import Recenter from "./recenter";
+import "./search-bar.css"
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete';
 
 
@@ -18,9 +19,9 @@ export default function SearchBar() {
     }
 
     return (
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div className="outerBox">
             <div>
-                <div style={{ backgroundColor: "white", height: "50%", color: "black" }}>
+                <div className="searchBox">
                     <GeoapifyContext apiKey="61d80f898ec14823899e64c8324a3f40">
                         <GeoapifyGeocoderAutocomplete
                             placeholder="search address"

@@ -1,3 +1,11 @@
-.SearchBar {
+ .searchBox {
+    background-color: white;
+    height: 50vh; 
+    width: 50vw;
     color: white;
-}
+    border-radius: 5px;
+ }
+
+ .geoapify-autocomplete-input {
+    width: 44vw;
+ }
