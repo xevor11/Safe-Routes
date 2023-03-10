@@ -1,16 +1,10 @@
 import { React, useState } from 'react';
 import './App.css';
-import LoginButton from './components/login-button';
-import LogoutButton from './components/logout-button';
-import SignupButton from './components/signup-button';
 import MapCont from './components/mapcontainer';
-import SearchBar from './components/search-bar';
 import TopBar from './components/topbar';
-import { ClassNames } from '@emotion/react';
 
 
 function App() {
-
 
   const [coords, setCoords] = useState([43.075647, -87.886633]);
 
