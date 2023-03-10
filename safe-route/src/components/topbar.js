@@ -10,7 +10,7 @@ export default function TopBar() {
     return (
         <nav className="bar">SafeRoute
             <ul>
-                <li>
+                <li className="search">
                     <SearchBar/>   
                 </li>
                 <li>

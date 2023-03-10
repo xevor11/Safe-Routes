@@ -1,6 +1,7 @@
 import React from "react";
 import Recenter from "./recenter";
 import "./search-bar.css"
+import appsettings from './../appsettings.json'
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete';
 
 
@@ -22,7 +23,7 @@ export default function SearchBar() {
         <div className="outerBox">
             <div>
                 <div className="searchBox">
-                    <GeoapifyContext apiKey="61d80f898ec14823899e64c8324a3f40">
+                    <GeoapifyContext apiKey={appsettings.geosearchKey}>
                         <GeoapifyGeocoderAutocomplete
                             placeholder="search address"
                             lang="en"
