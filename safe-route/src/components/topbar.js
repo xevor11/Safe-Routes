@@ -1,7 +1,6 @@
 import React from "react"
 import SearchBar from "./search-bar"
-import LoginButton from "./login-button"
-import LogoutButton from "./logout-button"
+import AuthenticationButton from './authentication-button'
 import './topbar.css'
 
 
@@ -13,7 +12,7 @@ export default function TopBar() {
                     <SearchBar/>   
                 </li>
                 <li>
-                    <div><LoginButton/><LogoutButton/></div>
+                    <div><AuthenticationButton/></div>
                 </li>
             </ul>
         </nav>
