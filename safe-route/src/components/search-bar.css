@@ -1,11 +1,30 @@
- .searchBox {
-    background-color: white;
-    height: 50vh; 
-    width: 50vw;
-    color: white;
-    border-radius: 5px;
- }
+.outerBox {
+   width: 50vw;
+
+}
+
+.searchBox {
+   position: relative;
+   width: 50vw;
+   background-color: white;
+   padding: .5rem;
+   justify-content: left;
+   height: 7vh;
+}
 
  .geoapify-autocomplete-input {
-    width: 44vw;
+    position: relative;
+    width: 50vw;
+
+ }
+ 
+ .geoapify-autocomplete-items {
+   position: relative;
+   background-color: white;
+   left: 0;
+   top: 0;
+ }
+
+ .geoapify-autocomplete-item {
+   position: relative;
  }

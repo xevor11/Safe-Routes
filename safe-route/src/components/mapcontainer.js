@@ -3,12 +3,12 @@ import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 import { currentLocIcon } from './icons/loc-icon';
 import Recenter from './recenter';
-import Routes from "./Routes";
-import TopBar from './topbar';
+import SearchBar from './search-bar';
 
 const MapCont = ({ lat, lng }) => {
 
   return (
+    
     <MapContainer center={[lat, lng]} zoom={12} style={{ width: "100%", height: "93vh" }}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -17,6 +17,7 @@ const MapCont = ({ lat, lng }) => {
       <Marker position={[lat, lng]} icon={currentLocIcon}></Marker>
       <Recenter lat={lat} lng={lng}></Recenter>
     </MapContainer>
+    
   );
 }
 

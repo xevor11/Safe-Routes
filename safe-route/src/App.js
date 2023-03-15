@@ -1,6 +1,8 @@
+import { Stack } from '@mui/system';
 import { React, useState } from 'react';
 import './App.css';
 import MapCont from './components/mapcontainer';
+import SearchBar from './components/search-bar';
 import TopBar from './components/topbar';
 
 
@@ -26,10 +28,16 @@ function App() {
   }
 
   return (
-    <div className='root'>
-      <TopBar />
-      <MapCont lat={coords[0]} lng={coords[1]} />
-    </div>
+
+    <>
+      <Stack direction="column" >
+        <Stack direction="row">
+          <SearchBar />
+          <TopBar />
+        </Stack>
+        <MapCont lat={coords[0]} lng={coords[1]} />
+      </Stack>
+    </>
   );
 
 }
