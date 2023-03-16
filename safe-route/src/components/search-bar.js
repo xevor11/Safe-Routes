@@ -1,5 +1,6 @@
 import React from "react";
 import Recenter from "./recenter";
+import '@geoapify/geocoder-autocomplete/styles/minimal.css'
 import "./search-bar.css"
 import appsettings from './../appsettings.json'
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete';
@@ -20,28 +21,22 @@ export default function SearchBar() {
     }
 
     return (
-        <div className="outerBox">
-            <div>
-                <div className="searchBox">
-                    <GeoapifyContext apiKey={appsettings.geosearchKey}>
-                        <GeoapifyGeocoderAutocomplete
-                            placeholder="search address"
-                            lang="en"
-                            limit="10"
-                            countryCodes="us"
-                            placeSelect={onPlaceSelect}
-                            suggestionsChange={onSuggestionChange}
-                        >
+        <div className="searchBox">
+            <GeoapifyContext apiKey={appsettings.geosearchKey}>
+                <GeoapifyGeocoderAutocomplete
+                    placeholder="search address"
+                    lang="en"
+                    limit="10"
+                    countryCodes="us"
+                    placeSelect={onPlaceSelect}
+                    suggestionsChange={onSuggestionChange}
+                >
 
-                        </GeoapifyGeocoderAutocomplete>
-                    </GeoapifyContext>
+                </GeoapifyGeocoderAutocomplete>
+            </GeoapifyContext>
 
-                </div>
-                {/* <Button variant="contained" color="primary">
-                    Search
-                </Button> */}
-            </div>
         </div>
+        
     )
 
 }
