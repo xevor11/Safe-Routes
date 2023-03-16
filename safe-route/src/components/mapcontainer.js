@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 import { currentLocIcon } from './icons/loc-icon';
 import Recenter from './recenter';
 import SearchBar from './search-bar';
+import Routes from "./Routes";
 
 const MapCont = ({ lat, lng }) => {
 
@@ -16,6 +17,7 @@ const MapCont = ({ lat, lng }) => {
       />
       <Marker position={[lat, lng]} icon={currentLocIcon}></Marker>
       <Recenter lat={lat} lng={lng}></Recenter>
+      <Routes/>    
     </MapContainer>
     
   );
