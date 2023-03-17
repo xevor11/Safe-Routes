@@ -18,7 +18,7 @@ export default function SearchBar() {
 
     function onSuggestionChange(value) {
         //onSuggestionChange, log value
-
+        console.log(value);
     }
 
     return (
@@ -36,7 +36,6 @@ export default function SearchBar() {
 
                     </GeoapifyGeocoderAutocomplete>
                 </GeoapifyContext>
-
             </div>
         </LocationContext.Provider>
 

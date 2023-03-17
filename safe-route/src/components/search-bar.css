@@ -20,5 +20,10 @@
 }
 
 .geoapify-autocomplete-items {
+   z-index: 1;
    width: calc(100% - 40px);
+}
+
+.geoapify-autocomplete-item {
+   z-index: 1;
 }

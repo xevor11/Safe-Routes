@@ -15,7 +15,7 @@ const MapCont = () => {
   console.log("hello from mapcont");
 
   return (
-    <MapContainer center={[coords[0], coords[1]]} zoom={12} style={{ width: "100%", height: "93vh" }}>
+    <MapContainer center={[coords[0], coords[1]]} zoom={12} style={{ width: "100%", height: "93vh", zIndex:0}}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
