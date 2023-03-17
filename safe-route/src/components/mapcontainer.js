@@ -17,7 +17,7 @@ const MapCont = ({ lat, lng }) => {
       />
       <Marker position={[lat, lng]} icon={currentLocIcon}></Marker>
       <Recenter lat={lat} lng={lng}></Recenter>
-      <Routes/>    
+      {/* <Routes/>     */}
     </MapContainer>
     
   );

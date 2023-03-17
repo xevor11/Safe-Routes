@@ -30,7 +30,7 @@ function App() {
   return (
 
     <>
-      <Stack direction="column">
+      <Stack direction="column" >
         <Stack direction="row">
           <SearchBar />
           <TopBar />

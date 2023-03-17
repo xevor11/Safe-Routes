@@ -10,3 +10,14 @@ button {
   cursor: pointer;
 }
 
+.MuiStack-root {
+  position: relative;
+}
+
+.MuiStack-root {
+  position: relative;
+}
+
+.leaflet-container {
+  z-index: 0;
+}
