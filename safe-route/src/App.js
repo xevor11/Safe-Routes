@@ -1,9 +1,10 @@
 import { Stack } from '@mui/system';
-import { React, useState } from 'react';
+import { React, useState, useContext, createContext } from 'react';
 import './App.css';
 import MapCont from './components/mapcontainer';
 import SearchBar from './components/search-bar';
 import TopBar from './components/topbar';
+import LocationContext from './components/LocationContext';
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
   const [coords, setCoords] = useState([43.075647, -87.886633]);
 
   const successCallback = (position) => {
-    setCoords([position.coords.latitude, position.coords.longitude])
+    setCoords([position.coords.latitude, position.coords.longitude]);
   }
 
   const errorCallback = (error) => {
@@ -20,7 +21,7 @@ function App() {
 
   const options = {
     enableHighAccuracy: false,
-    timeout: 10000,
+    timeout: 100000,
   }
 
   if (navigator.geolocation) {
@@ -29,15 +30,15 @@ function App() {
 
   return (
 
-    <>
+    <LocationContext.Provider value={coords}>
       <Stack direction="column" >
         <Stack direction="row">
           <SearchBar />
           <TopBar />
         </Stack>
-        <MapCont lat={coords[0]} lng={coords[1]} />
+        <MapCont/>
       </Stack>
-    </>
+    </LocationContext.Provider>
   );
 
 }
