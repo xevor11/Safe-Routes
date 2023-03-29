@@ -10,7 +10,6 @@ import { LocationProvider, useLocation, useLocationUpdate } from "./LocationProv
 
 export default function SearchBar() {
 
-    const coords = useLocation()
     const setCoords = useLocationUpdate()
 
 
@@ -24,7 +23,6 @@ export default function SearchBar() {
     }
 
     return (
-        <LocationProvider>
             <div className="searchBox">
                 <GeoapifyContext apiKey={appsettings.geosearchKey}>
                     <GeoapifyGeocoderAutocomplete
@@ -38,8 +36,6 @@ export default function SearchBar() {
                     </GeoapifyGeocoderAutocomplete>
                 </GeoapifyContext>
             </div>
-        </LocationProvider>
-
     )
 
 }
