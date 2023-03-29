@@ -12,8 +12,6 @@ const MapCont = () => {
 
   const coords = useLocation()
 
-  console.log(coords)
-
   return (
     <LocationProvider>
       <MapContainer center={[coords[0], coords[1]]} zoom={12} style={{ width: "100%", height: "93vh", zIndex: 0 }}>

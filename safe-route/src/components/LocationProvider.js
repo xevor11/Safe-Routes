@@ -14,7 +14,7 @@ export function useLocationUpdate() {
 export function LocationProvider({ children }) {
     const [coords, setCoords] = useState([43.075647, -87.886633]);
 
-    function updateCoords() {
+    function updateCoords( newCoords ) {
         const successCallback = (position) => {
             setCoords([position.coords.latitude, position.coords.longitude]);
         }
@@ -28,8 +28,11 @@ export function LocationProvider({ children }) {
             timeout: 100000,
         }
     
-        
         navigator.geolocation.watchPosition(successCallback, errorCallback, options);
+
+        if(newCoords){
+            setCoords(newCoords)
+        } 
         
     }
 

@@ -4,16 +4,18 @@ import '@geoapify/geocoder-autocomplete/styles/minimal.css'
 import "./search-bar.css"
 import appsettings from './../appsettings.json'
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete';
+import { LocationProvider, useLocation, useLocationUpdate } from "./LocationProvider";
+
 
 
 export default function SearchBar() {
 
-    const [coords, setCoords] = useState([]);
+    const coords = useLocation()
+    const setCoords = useLocationUpdate()
+
 
     function onPlaceSelect(value) {
         setCoords([value.properties.lat, value.properties.lon]);
-        console.log(value.properties.lat, value.properties.lon);
-        console.log("hello from onplaceselect");
     }
 
     function onSuggestionChange(value) {
@@ -22,7 +24,7 @@ export default function SearchBar() {
     }
 
     return (
-
+        <LocationProvider>
             <div className="searchBox">
                 <GeoapifyContext apiKey={appsettings.geosearchKey}>
                     <GeoapifyGeocoderAutocomplete
@@ -33,11 +35,10 @@ export default function SearchBar() {
                         placeSelect={onPlaceSelect}
                         suggestionsChange={onSuggestionChange}
                     >
-
                     </GeoapifyGeocoderAutocomplete>
                 </GeoapifyContext>
             </div>
-
+        </LocationProvider>
 
     )
 
