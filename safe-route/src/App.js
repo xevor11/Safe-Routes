@@ -4,14 +4,14 @@ import './App.css';
 import MapCont from './components/mapcontainer';
 import SearchBar from './components/search-bar';
 import TopBar from './components/topbar';
-import { LocationProvider } from './components/LocationProvider';
+import { UserLocationProvider } from './components/UserLocationProvider';
 
 
 function App() {
 
   return (
 
-    <LocationProvider>
+    <UserLocationProvider>
       <Stack direction="column" >
         <Stack direction="row">
           <SearchBar />
@@ -19,7 +19,7 @@ function App() {
         </Stack>
         <MapCont />
       </Stack>
-    </LocationProvider>
+    </UserLocationProvider>
   );
 
 }

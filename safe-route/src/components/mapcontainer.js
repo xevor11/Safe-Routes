@@ -5,12 +5,11 @@ import { currentLocIcon } from './icons/loc-icon';
 import Recenter from './recenter';
 import SearchBar from './search-bar';
 import Routes from "./Routes";
-import { LocationProvider, useLocation, useTheme } from './LocationProvider';
-
+import { useUserLocation } from './UserLocationProvider';
 
 const MapCont = () => {
 
-  const coords = useLocation()
+  const coords = useUserLocation()
 
   return (
 
@@ -21,6 +20,7 @@ const MapCont = () => {
         />
         <Marker position={[coords[0], coords[1]]} icon={currentLocIcon} ></Marker>
         <Recenter lat={coords[0]} lng={coords[1]}></Recenter>
+        <Routes></Routes>
       </MapContainer>
 
   );

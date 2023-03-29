@@ -1,17 +1,17 @@
 import { useState, useContext, createContext } from "react";
 
-const LocationContext = createContext();
-const UpdateLocationContext = createContext();
+const UserLocationContext = createContext();
+const UpdateUserLocationContext = createContext();
 
-export function useLocation() {
-    return useContext(LocationContext)
+export function useUserLocation() {
+    return useContext(UserLocationContext)
 }
 
-export function useLocationUpdate() {
-    return useContext(UpdateLocationContext)
+export function useUserLocationUpdate() {
+    return useContext(UpdateUserLocationContext)
 }
 
-export function LocationProvider({ children }) {
+export function UserLocationProvider({ children }) {
     const [coords, setCoords] = useState([43.075647, -87.886633]);
 
     function updateCoords( newCoords ) {
@@ -41,10 +41,10 @@ export function LocationProvider({ children }) {
     }
 
     return (
-        <LocationContext.Provider value={coords}>
-            <UpdateLocationContext.Provider value={updateCoords}>
+        <UserLocationContext.Provider value={coords}>
+            <UpdateUserLocationContext.Provider value={updateCoords}>
                 {children}
-            </UpdateLocationContext.Provider>
-        </LocationContext.Provider>
+            </UpdateUserLocationContext.Provider>
+        </UserLocationContext.Provider>
     )
 }
