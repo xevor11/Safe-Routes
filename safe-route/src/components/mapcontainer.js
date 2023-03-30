@@ -20,7 +20,7 @@ const MapCont = () => {
         />
         <Marker position={[coords[0], coords[1]]} icon={currentLocIcon} ></Marker>
         <Recenter lat={coords[0]} lng={coords[1]}></Recenter>
-        <Routes></Routes>
+        <Routes lati={coords[0]} long={coords[1]}></Routes>
       </MapContainer>
 
   );
