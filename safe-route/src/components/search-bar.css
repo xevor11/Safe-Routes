@@ -1,3 +1,29 @@
-.SearchBar {
-    color: white;
+* {
+   position: relative;
+   box-sizing: border-box;
+}
+
+.geocoder-container {
+   z-index: 1;   
+}
+
+.searchBox {
+   width: 75vw;
+   background-color: #333;
+   position: relative;
+   padding: .5rem;
+   height: 7vh;
+}
+
+.geoapify-close-button {
+   color: white;
+}
+
+.geoapify-autocomplete-items {
+   z-index: 1;
+   width: calc(100% - 40px);
+}
+
+.geoapify-autocomplete-item {
+   z-index: 1;
 }

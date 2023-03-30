@@ -1,15 +1,20 @@
-import React from "react";
+import { React, useContext, useState } from "react";
 import Recenter from "./recenter";
+import '@geoapify/geocoder-autocomplete/styles/minimal.css'
+import "./search-bar.css"
+import appsettings from './../appsettings.json'
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete';
+import { LocationProvider, useUserLocation, useUserLocationUpdate } from "./UserLocationProvider";
 
 
 
 export default function SearchBar() {
 
+    const setCoords = useUserLocationUpdate()
+
+
     function onPlaceSelect(value) {
-        let coords = [value.properties.lat, value.properties.lon];
-        console.log(coords);
-        Recenter(coords[0], coords[1]);
+        setCoords([value.properties.lat, value.properties.lon]);
     }
 
     function onSuggestionChange(value) {
@@ -18,28 +23,19 @@ export default function SearchBar() {
     }
 
     return (
-        <div style={{ display: "flex", flexDirection: "column" }}>
-            <div>
-                <div style={{ backgroundColor: "white", height: "50%", color: "black" }}>
-                    <GeoapifyContext apiKey="61d80f898ec14823899e64c8324a3f40">
-                        <GeoapifyGeocoderAutocomplete
-                            placeholder="search address"
-                            lang="en"
-                            limit="10"
-                            countryCodes="us"
-                            placeSelect={onPlaceSelect}
-                            suggestionsChange={onSuggestionChange}
-                        >
-
-                        </GeoapifyGeocoderAutocomplete>
-                    </GeoapifyContext>
-
-                </div>
-                {/* <Button variant="contained" color="primary">
-                    Search
-                </Button> */}
+            <div className="searchBox">
+                <GeoapifyContext apiKey={appsettings.geosearchKey}>
+                    <GeoapifyGeocoderAutocomplete
+                        placeholder="search address"
+                        lang="en"
+                        limit="10"
+                        countryCodes="us"
+                        placeSelect={onPlaceSelect}
+                        suggestionsChange={onSuggestionChange}
+                    >
+                    </GeoapifyGeocoderAutocomplete>
+                </GeoapifyContext>
             </div>
-        </div>
     )
 
 }
