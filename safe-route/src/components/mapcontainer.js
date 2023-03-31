@@ -1,10 +1,11 @@
-import { React, useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import React from 'react';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 import { currentLocIcon } from './icons/loc-icon';
 import Recenter from './recenter';
 import SearchBar from './search-bar';
-import Routes from "./Routes";
+import RoutingMachine from './Routes';
 import { useUserLocation } from './LocationProviders/UserLocationProvider';
 
 const MapCont = () => {
@@ -20,7 +21,7 @@ const MapCont = () => {
         />
         <Marker position={[coords[0], coords[1]]} icon={currentLocIcon} ></Marker>
         <Recenter lat={coords[0]} lng={coords[1]}></Recenter>
-        <Routes lati={coords[0]} long={coords[1]}></Routes>
+        <RoutingMachine></RoutingMachine>
       </MapContainer>
 
   );

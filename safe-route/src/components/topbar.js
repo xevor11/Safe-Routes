@@ -7,14 +7,7 @@ import './topbar.css'
 export default function TopBar() {
     return (
         <nav className="bar">SafeRoute
-            
-                {/* <li className="search">
-                    <SearchBar/>   
-                </li> */}
-                
-                    <AuthenticationButton/>
-                
-            
+                    <AuthenticationButton/>      
         </nav>
     )
 }
