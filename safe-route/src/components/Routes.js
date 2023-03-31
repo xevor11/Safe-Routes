@@ -1,32 +1,46 @@
+import { useState, useEffect } from "react";
 import L from "leaflet";
 import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
+import { useUserLocation } from "./LocationProviders/UserLocationProvider";
+import { destinationIcon } from "./icons/dest-icon";
+import { useDestLocation } from "./LocationProviders/DestLocationProvider";
 // import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 // import { useUserLocation } from "./UserLocationProvider";
 
 
-const Routes = ({lati, long}) => {;
+const Routes = () => {
+  const coords = useUserLocation()
+  const destCoords = useDestLocation()
 
-alert(lati);
-    const instance = L.Routing.control({
-      waypoints: [
-        L.latLng(lati, long),
-        L.latLng(43.0, -87.88195787327174)
-      ],
-      lineOptions: {
-        styles: [{ color: "#6FA1EC", weight: 4 }]
-      },
-      show: false,
-      addWaypoints: false,
-      routeWhileDragging: true,
-      draggableWaypoints: true,
-      fitSelectedRoutes: true,      
-    });
-    
+  const [instance, setInstance] = useState(null);
 
-    return instance;
-  };
-  
-  const RoutingMachine = createControlComponent(Routes);
-  
-  export default RoutingMachine;
+  useEffect(() => {
+    if (Object.keys(destCoords).length !== 0) {
+      const newInstance = L.Routing.control({
+        waypoints: [
+          L.latLng(coords[0], coords[1]),
+          L.latLng(destCoords[0], destCoords[1])
+        ],
+        lineOptions: {
+          styles: [{ color: "#6FA1EC", weight: 4 }]
+        },
+        createMarker: function () { return null; },
+        show: false,
+        addWaypoints: false,
+        routeWhileDragging: true,
+        draggableWaypoints: true,
+        fitSelectedRoutes: true,
+      });
+      setInstance(newInstance);
+    } else {
+      setInstance(null);
+    }
+  }, [coords, destCoords]);
+
+  return instance;
+};
+
+const RoutingMachine = createControlComponent(Routes);
+
+export default RoutingMachine;

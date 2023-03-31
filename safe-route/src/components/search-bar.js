@@ -4,8 +4,8 @@ import '@geoapify/geocoder-autocomplete/styles/minimal.css'
 import "./search-bar.css"
 import appsettings from './../appsettings.json'
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete';
-import { LocationProvider, useUserLocation, useUserLocationUpdate } from "./UserLocationProvider";
-
+import { LocationProvider, useUserLocation, useUserLocationUpdate } from "./LocationProviders/UserLocationProvider";
+import { useDestLocationUpdate } from "./LocationProviders/DestLocationProvider";
 
 
 export default function SearchBar() {

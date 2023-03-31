@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { useMap } from "react-leaflet";
-import Routes from "./Routes";
 
 const Recenter = ({ lat, lng }) => {
-  //alert(lat +" "+lng);
+
     const map = useMap();
   
     useEffect(() => {

@@ -12,11 +12,12 @@ export function useUserLocationUpdate() {
 }
 
 export function UserLocationProvider({ children }) {
-    const [coords, setCoords] = useState([43.075647, -87.886633]);
+    
+    const [userCoords, setUserCoords] = useState([43.075647, -87.886633]);
 
-    function updateCoords( newCoords ) {
+    function updateUserCoords( newCoords ) {
         const successCallback = (position) => {
-            setCoords([position.coords.latitude, position.coords.longitude]);
+            setUserCoords([position.coords.latitude, position.coords.longitude]);
         }
     
         const errorCallback = (error) => {
@@ -31,18 +32,18 @@ export function UserLocationProvider({ children }) {
         navigator.geolocation.watchPosition(successCallback, errorCallback, options);
 
         if(newCoords){
-            setCoords(newCoords)
+            setUserCoords(newCoords)
         } 
         
     }
 
     if(navigator.geolocation) {
-        updateCoords()
+        updateUserCoords()
     }
 
     return (
-        <UserLocationContext.Provider value={coords}>
-            <UpdateUserLocationContext.Provider value={updateCoords}>
+        <UserLocationContext.Provider value={userCoords}>
+            <UpdateUserLocationContext.Provider value={updateUserCoords}>
                 {children}
             </UpdateUserLocationContext.Provider>
         </UserLocationContext.Provider>

@@ -5,11 +5,11 @@ import { currentLocIcon } from './icons/loc-icon';
 import Recenter from './recenter';
 import SearchBar from './search-bar';
 import Routes from "./Routes";
-import { useUserLocation } from './UserLocationProvider';
+import { useUserLocation } from './LocationProviders/UserLocationProvider';
 
 const MapCont = () => {
 
-  const coords = useUserLocation()
+  const coords = useUserLocation();
 
   return (
 

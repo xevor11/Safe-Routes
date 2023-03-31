@@ -4,24 +4,25 @@ import './App.css';
 import MapCont from './components/mapcontainer';
 import SearchBar from './components/search-bar';
 import TopBar from './components/topbar';
-import { UserLocationProvider } from './components/UserLocationProvider';
+import { UserLocationProvider } from './components/LocationProviders/UserLocationProvider';
+import { DestLocationProvider } from './components/LocationProviders/DestLocationProvider';
 
 
 function App() {
 
   return (
-
     <UserLocationProvider>
-      <Stack direction="column" >
-        <Stack direction="row">
-          <SearchBar />
-          <TopBar />
+      <DestLocationProvider>
+        <Stack direction="column" >
+          <Stack direction="row">
+            <SearchBar />
+            <TopBar />
+          </Stack>
+          <MapCont />
         </Stack>
-        <MapCont />
-      </Stack>
+      </DestLocationProvider>
     </UserLocationProvider>
   );
-
 }
 
 export default App;
