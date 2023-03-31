@@ -10,11 +10,10 @@ import { useDestLocationUpdate } from "./LocationProviders/DestLocationProvider"
 
 export default function SearchBar() {
 
-    const setCoords = useUserLocationUpdate()
-
+    const setDestCoords = useDestLocationUpdate()
 
     function onPlaceSelect(value) {
-        setCoords([value.properties.lat, value.properties.lon]);
+        setDestCoords([value.properties.lat, value.properties.lon]);
     }
 
     function onSuggestionChange(value) {
@@ -23,19 +22,19 @@ export default function SearchBar() {
     }
 
     return (
-            <div className="searchBox">
-                <GeoapifyContext apiKey={appsettings.geosearchKey}>
-                    <GeoapifyGeocoderAutocomplete
-                        placeholder="search address"
-                        lang="en"
-                        limit="10"
-                        countryCodes="us"
-                        placeSelect={onPlaceSelect}
-                        suggestionsChange={onSuggestionChange}
-                    >
-                    </GeoapifyGeocoderAutocomplete>
-                </GeoapifyContext>
-            </div>
+        <div className="searchBox">
+            <GeoapifyContext apiKey={appsettings.geosearchKey}>
+                <GeoapifyGeocoderAutocomplete
+                    placeholder="search address"
+                    lang="en"
+                    limit="10"
+                    countryCodes="us"
+                    placeSelect={onPlaceSelect}
+                    suggestionsChange={onSuggestionChange}
+                >
+                </GeoapifyGeocoderAutocomplete>
+            </GeoapifyContext>
+        </div>
     )
 
 }

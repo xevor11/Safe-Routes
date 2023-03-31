@@ -12,8 +12,8 @@ export function useDestLocationUpdate() {
 }
 
 export function DestLocationProvider({ children }) {
-    
-    const [destCoords, setDestCoords] = useState([10.00, 10.00]);
+    //[43.0401, -87.8971]
+    const [destCoords, setDestCoords] = useState([]);
 
     function updateDestCoords( newCoords ) {
         setDestCoords(newCoords)
