@@ -6,7 +6,7 @@ import SearchBar from './components/search-bar';
 import TopBar from './components/topbar';
 import { UserLocationProvider } from './components/LocationProviders/UserLocationProvider';
 import { DestLocationProvider } from './components/LocationProviders/DestLocationProvider';
-
+//import LocationContextProvider  from './components/LocationProvider';
 
 function App() {
 
