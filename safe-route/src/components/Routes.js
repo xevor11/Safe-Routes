@@ -2,20 +2,20 @@ import { useState, useEffect } from "react";
 import L from "leaflet";
 import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
-import { useUserLocation } from "./LocationProviders/UserLocationProvider";
 import { destinationIcon } from "./icons/dest-icon";
-import { useDestLocation } from "./LocationProviders/DestLocationProvider";
+import { useLocation } from "./LocationProvider";
 
 const Routes = () => {
 
-  const coords = useUserLocation()
-  const destCoords = useDestLocation()
+  const getLocationHook = useLocation()
+  //extrapolate object from useContext hook
+  const location = getLocationHook.location
 
-  if (Object.keys(destCoords).length !== 0) {
+  if (location.destCoords.lat) {
     const instance = L.Routing.control({
       waypoints: [
-        L.latLng(coords[0], coords[1]),
-        L.latLng(destCoords[0], destCoords[1])
+        L.latLng(location.userCoords.lat, location.userCoords.lng),
+        L.latLng(location.destCoords.lat, location.destCoords.lng)
       ],
       lineOptions: {
         styles: [{ color: "#6FA1EC", weight: 4 }]

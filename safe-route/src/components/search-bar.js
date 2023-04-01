@@ -1,19 +1,19 @@
-import { React, useContext, useState } from "react";
-import Recenter from "./recenter";
+import { React } from "react";
 import '@geoapify/geocoder-autocomplete/styles/minimal.css'
 import "./search-bar.css"
 import appsettings from './../appsettings.json'
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete';
-import { LocationProvider, useUserLocation, useUserLocationUpdate } from "./LocationProviders/UserLocationProvider";
-import { useDestLocationUpdate } from "./LocationProviders/DestLocationProvider";
-
+import { useLocation } from "./LocationProvider";
+import { useDestLocationUpdate } from "./LocationProvider";
 
 export default function SearchBar() {
 
     const setDestCoords = useDestLocationUpdate()
+    //extrapolate object from useContext hook
+
 
     function onPlaceSelect(value) {
-        setDestCoords([value.properties.lat, value.properties.lon]);
+        setDestCoords({lat: value.properties.lat, lng: value.properties.lon});
     }
 
     function onSuggestionChange(value) {
