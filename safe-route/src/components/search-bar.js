@@ -9,11 +9,14 @@ import { useDestLocationUpdate } from "./LocationProvider";
 export default function SearchBar() {
 
     const setDestCoords = useDestLocationUpdate()
-    //extrapolate object from useContext hook
-
 
     function onPlaceSelect(value) {
-        setDestCoords({lat: value.properties.lat, lng: value.properties.lon});
+        
+        if(value){
+            setDestCoords({lat: value.properties.lat, lng: value.properties.lon});
+        } else {
+            setDestCoords({lat: null, lng: null})
+        }                
     }
 
     function onSuggestionChange(value) {
@@ -21,7 +24,12 @@ export default function SearchBar() {
         console.log(value);
     }
 
-    return (
+    function onCloseEvent(value) {
+
+        setDestCoords({lat: null, lng: null})
+    }
+
+    return ( 
         <div className="searchBox">
             <GeoapifyContext apiKey={appsettings.geosearchKey}>
                 <GeoapifyGeocoderAutocomplete
@@ -31,6 +39,7 @@ export default function SearchBar() {
                     countryCodes="us"
                     placeSelect={onPlaceSelect}
                     suggestionsChange={onSuggestionChange}
+                    onClose={onCloseEvent}
                 >
                 </GeoapifyGeocoderAutocomplete>
             </GeoapifyContext>
