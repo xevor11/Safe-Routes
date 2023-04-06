@@ -24,11 +24,6 @@ export default function SearchBar() {
         console.log(value);
     }
 
-    function onCloseEvent(value) {
-
-        setDestCoords({lat: null, lng: null})
-    }
-
     return ( 
         <div className="searchBox">
             <GeoapifyContext apiKey={appsettings.geosearchKey}>
@@ -39,7 +34,6 @@ export default function SearchBar() {
                     countryCodes="us"
                     placeSelect={onPlaceSelect}
                     suggestionsChange={onSuggestionChange}
-                    onClose={onCloseEvent}
                 >
                 </GeoapifyGeocoderAutocomplete>
             </GeoapifyContext>
