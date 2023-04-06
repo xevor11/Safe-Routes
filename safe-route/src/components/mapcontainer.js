@@ -1,20 +1,21 @@
 import React, { useContext } from 'react';
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Rectangle } from 'react-leaflet';
 import { currentLocIcon } from './icons/loc-icon';
 import Recenter from './recenter';
 import RoutingMachine from './Routes';
 import { useLocation } from './LocationProvider';
+import {Milwaukee} from "./data";
 
 const MapCont = () => {
-
+  const blackOptions = { color: 'black' }
   const getLocationHook = useLocation()
   //extrapolate object from useContext hook
   const location = getLocationHook.location
 
   if (location.destCoords.lat) {
     return (
-      <MapContainer center={[location.userCoords.lat, location.userCoords.lng]} zoom={12} style={{ width: "100%", height: "93vh", zIndex: 0 }}>
+      <MapContainer center={[location.userCoords.lat, location.userCoords.lng]} zoom={12} style={{ width: "100%", height: "93vh", zIndex: 0 }} >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -31,6 +32,7 @@ const MapCont = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        <Rectangle bounds={Milwaukee} pathOptions={blackOptions}/>
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.userCoords.lat} lng={location.userCoords.lng}></Recenter>
       </MapContainer>
