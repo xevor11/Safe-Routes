@@ -1,15 +1,22 @@
-import React from "react";
-import Recenter from "./recenter";
+import { React } from "react";
+import '@geoapify/geocoder-autocomplete/styles/minimal.css'
+import "./search-bar.css"
+import appsettings from './../appsettings.json'
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete';
-
-
+import { useLocation } from "./LocationProvider";
+import { useDestLocationUpdate } from "./LocationProvider";
 
 export default function SearchBar() {
 
+    const setDestCoords = useDestLocationUpdate()
+
     function onPlaceSelect(value) {
-        let coords = [value.properties.lat, value.properties.lon];
-        console.log(coords);
-        Recenter(coords[0], coords[1]);
+        
+        if(value){
+            setDestCoords({lat: value.properties.lat, lng: value.properties.lon});
+        } else {
+            setDestCoords({lat: null, lng: null})
+        }                
     }
 
     function onSuggestionChange(value) {
@@ -17,28 +24,19 @@ export default function SearchBar() {
         console.log(value);
     }
 
-    return (
-        <div style={{ display: "flex", flexDirection: "column" }}>
-            <div>
-                <div style={{ backgroundColor: "white", height: "50%", color: "black" }}>
-                    <GeoapifyContext apiKey="61d80f898ec14823899e64c8324a3f40">
-                        <GeoapifyGeocoderAutocomplete
-                            placeholder="search address"
-                            lang="en"
-                            limit="10"
-                            countryCodes="us"
-                            placeSelect={onPlaceSelect}
-                            suggestionsChange={onSuggestionChange}
-                        >
-
-                        </GeoapifyGeocoderAutocomplete>
-                    </GeoapifyContext>
-
-                </div>
-                {/* <Button variant="contained" color="primary">
-                    Search
-                </Button> */}
-            </div>
+    return ( 
+        <div className="searchBox">
+            <GeoapifyContext apiKey={appsettings.geosearchKey}>
+                <GeoapifyGeocoderAutocomplete
+                    placeholder="search address"
+                    lang="en"
+                    limit="10"
+                    countryCodes="us"
+                    placeSelect={onPlaceSelect}
+                    suggestionsChange={onSuggestionChange}
+                >
+                </GeoapifyGeocoderAutocomplete>
+            </GeoapifyContext>
         </div>
     )
 
