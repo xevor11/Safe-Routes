@@ -14,7 +14,9 @@ const ThemeToggle = () => {
     return (
         <FormControlLabel control={<Switch            
             onChange={handleChange} />} 
-            style={{zIndex:5}}/>
+            style={{zIndex:5}}
+            label="Theme"/>
+
     )
 
 }
