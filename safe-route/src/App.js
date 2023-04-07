@@ -6,6 +6,7 @@ import SearchBar from './components/search-bar';
 import TopBar from './components/topbar';
 import { LocationContextProvider } from './components/LocationProvider';
 import { ThemeContextProvider } from './components/theme';
+import ThemeToggle from './components/theme-switch';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Stack direction="row">
             <SearchBar />
             <TopBar />
+            <ThemeToggle></ThemeToggle>
           </Stack>
           <>
             <MapCont />

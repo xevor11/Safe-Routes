@@ -24,19 +24,19 @@ export function useThemeUpdate() {
 
 
 export function ThemeContextProvider({ children }) {
-    const [theme, setTheme] = useState('light')
 
-    function updateTheme(newTheme) {
-        if (newTheme == 'light' || newTheme == 'dark') {
-            setTheme(newTheme)
-        }    
+    const [theme, setTheme] = useState(true)
+
+    function updateTheme() {
+
+        setTheme((theme) => !theme)
     }
 
     function getTheme() {
-        if(theme == 'light'){
+        if (theme) {
             return themeOptions.light
         }
-        if(theme == 'dark'){
+        else {
             return themeOptions.dark
         }
     }
