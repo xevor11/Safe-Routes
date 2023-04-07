@@ -10,11 +10,6 @@ import { useTheme } from './theme';
 
 const MapCont = () => {
 
-  // attribution= '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  // url = 'https://{s}.tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token={accessToken}'
-  // attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  // url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-
   const getLocationHook = useLocation()
   //extrapolate object from useContext hook
   const location = getLocationHook.location
