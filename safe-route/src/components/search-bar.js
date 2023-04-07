@@ -15,8 +15,9 @@ export default function SearchBar() {
         if(value){
             setDestCoords({lat: value.properties.lat, lng: value.properties.lon});
         } else {
+            
             setDestCoords({lat: null, lng: null})
-        }                
+        }
     }
 
     function onSuggestionChange(value) {
