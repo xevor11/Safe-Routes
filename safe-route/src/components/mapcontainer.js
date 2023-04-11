@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Rectangle } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Polygon } from 'react-leaflet';
 import { currentLocIcon } from './icons/loc-icon';
 import Recenter from './recenter';
 import RoutingMachine from './Routes';
 import { useLocation } from './LocationProvider';
 import {Milwaukee} from "./data";
+import { counties } from './counties';
 
 const MapCont = () => {
   const blackOptions = { color: 'black' }
@@ -32,9 +33,10 @@ const MapCont = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Rectangle bounds={Milwaukee} pathOptions={blackOptions}/>
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.userCoords.lat} lng={location.userCoords.lng}></Recenter>
+        <Polygon positions={counties} pathOptions={{color:'blue'}}/>
+        
       </MapContainer>
     );
   }
