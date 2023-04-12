@@ -26,4 +26,18 @@ describe('AuthenticationButton', () => {
     const logoutButton = getByText('Log out');
     expect(logoutButton).toBeInTheDocument();
   });
+
+  test('calls loginWithRedirect when LoginButton is clicked', () => {
+    const { getByText } = render(<AuthenticationButton />);
+    const loginButton = getByText('Log in');
+    fireEvent.click(loginButton);
+    expect(useAuth0().loginWithRedirect).toHaveBeenCalled();
+  });
+
+  test('calls logout when LogoutButton is clicked', () => {
+    const { getByText } = render(<AuthenticationButton />);
+    const logoutButton = getByText('Log out');
+    fireEvent.click(logoutButton);
+    expect(useAuth0().logout).toHaveBeenCalled();
+  });
 });
