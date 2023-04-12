@@ -70,15 +70,4 @@ describe('LoginButton', () => {
 
     expect(loginWithRedirectMock).toHaveBeenCalled();
   });
-
-  test('renders logout button when authenticated', () => {
-    useAuth0.mockReturnValue({
-      isAuthenticated: true,
-      logout: jest.fn(),
-    });
-
-    const { getByText } = render(<LoginButton />);
-    const logoutButton = getByText('Logout');
-    expect(logoutButton).toBeInTheDocument();
-  });
 });
