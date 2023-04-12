@@ -42,4 +42,43 @@ describe('LoginButton', () => {
     const loginButton = queryByText('Login');
     expect(loginButton).not.toBeInTheDocument();
   });
+
+  test('displays error message when authentication fails', () => {
+    useAuth0.mockReturnValue({
+      isAuthenticated: false,
+      loginWithRedirect: jest.fn(),
+      error: {
+        message: 'Oops! Something went wrong.',
+      },
+    });
+
+    const { getByText } = render(<LoginButton />);
+    const errorMessage = getByText('Oops! Something went wrong.');
+    expect(errorMessage).toBeInTheDocument();
+  });
+
+  test('calls loginWithRedirect on button click', () => {
+    const loginWithRedirectMock = jest.fn();
+    useAuth0.mockReturnValue({
+      isAuthenticated: false,
+      loginWithRedirect: loginWithRedirectMock,
+    });
+
+    const { getByText } = render(<LoginButton />);
+    const loginButton = getByText('Login');
+    fireEvent.click(loginButton);
+
+    expect(loginWithRedirectMock).toHaveBeenCalled();
+  });
+
+  test('renders logout button when authenticated', () => {
+    useAuth0.mockReturnValue({
+      isAuthenticated: true,
+      logout: jest.fn(),
+    });
+
+    const { getByText } = render(<LoginButton />);
+    const logoutButton = getByText('Logout');
+    expect(logoutButton).toBeInTheDocument();
+  });
 });
