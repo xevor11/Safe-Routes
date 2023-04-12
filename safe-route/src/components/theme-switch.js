@@ -14,11 +14,8 @@ const ThemeToggle = () => {
     return (
         <FormControlLabel control={<Switch            
             onChange={handleChange} />} 
-            style={{zIndex:5}}
-            label="Theme"/>
-
+            style={{zIndex:5}}/>
     )
-
 }
 
 export default ThemeToggle;
