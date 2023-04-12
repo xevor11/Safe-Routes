@@ -1,10 +1,16 @@
 import React, { useState } from "react"
 import AuthenticationButton from './authentication-button'
 import './topbar.css'
-import { IconButton, Menu } from "@mui/material"
-
+import { IconButton, Menu, MenuItem } from "@mui/material"
+import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 
 export default function TopBar() {
+
+    const options = [
+        'test',
+        'test',
+        'test',
+    ]
 
     const [anchor, setAnchor] = useState(null);
     
@@ -18,10 +24,8 @@ export default function TopBar() {
         setAnchor(null)
     };
 
-
     return (
         <nav className="bar">SafeRoute
-            {/* <>
                 <IconButton
                     aria-label="Menu"
                     id="long-button"
@@ -30,7 +34,7 @@ export default function TopBar() {
                     aria-haspopup="true"
                     onClick={handleClick}
                 >
-                    <MoreVertIcon />
+                    <DensityMediumIcon/>
                 </IconButton>
                 <Menu
                     id="long-menu"
@@ -39,11 +43,18 @@ export default function TopBar() {
                     }}
                     anchorEl={anchor}
                     open={open}
-
+                    onClose={handleClose}
+                    PaperProps={{
+                        style: {
+                            width: '20ch',
+                        },
+                    }}
                 >
-
+                    {options.map((option) => (
+                        <MenuItem key={option} onClick={handleClose}></MenuItem>
+                    ))}
                 </Menu>
-            </> */}
+            
             <AuthenticationButton />
         </nav>
     )
