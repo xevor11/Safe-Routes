@@ -17,7 +17,6 @@ function App() {
           <Stack direction="row">
             <SearchBar />
             <TopBar />
-            <ThemeToggle></ThemeToggle>
           </Stack>
           <>
             <MapCont />

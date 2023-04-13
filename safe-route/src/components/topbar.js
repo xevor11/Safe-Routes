@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import AuthenticationButton from './authentication-button'
 import './topbar.css'
-import { IconButton, Menu, MenuItem } from "@mui/material"
+import { IconButton, Menu, MenuItem, ToggleButton } from "@mui/material"
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
+import { useThemeUpdate } from "./theme";
 
 export default function TopBar() {
 
@@ -23,6 +24,8 @@ export default function TopBar() {
     const handleClose = () => {
         setAnchor(null)
     };
+
+    const ToggleTheme = useThemeUpdate()
 
     return (
         <nav className="bar">SafeRoute
@@ -50,9 +53,8 @@ export default function TopBar() {
                         },
                     }}
                 >
-                    {options.map((option) => (
-                        <MenuItem key={option} onClick={handleClose}></MenuItem>
-                    ))}
+                <MenuItem onClick={ToggleTheme}>Change Theme</MenuItem>
+                
                 </Menu>
             
             <AuthenticationButton />
