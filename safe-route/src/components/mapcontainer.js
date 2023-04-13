@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Polygon } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Polygon,} from 'react-leaflet';
 import { currentLocIcon } from './icons/loc-icon';
 import Recenter from './recenter';
 import RoutingMachine from './Routes';
