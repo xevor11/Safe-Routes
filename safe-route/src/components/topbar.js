@@ -29,6 +29,7 @@ export default function TopBar() {
 
     return (
         <nav className="bar">SafeRoute
+
                 <IconButton
                     aria-label="Menu"
                     id="long-button"
