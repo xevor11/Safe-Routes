@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, Polygon,} from 'react-leaflet';
 import { currentLocIcon } from './icons/loc-icon';
@@ -11,7 +11,7 @@ import { counties } from './counties';
 
 
 const MapCont = () => {
-  const blackOptions = { color: 'black' }
+
   const getLocationHook = useLocation()
   //extrapolate object from useContext hook
   const location = getLocationHook.location
@@ -42,7 +42,7 @@ const MapCont = () => {
         />
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.userCoords.lat} lng={location.userCoords.lng}></Recenter>
-        <Polygon positions={counties} pathOptions={{color:'blue'}}/>
+        <Polygon positions={counties} pathOptions={{color:'#178bff'}}/>
       </MapContainer>
     );
   }
