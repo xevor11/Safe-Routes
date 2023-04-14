@@ -5,8 +5,7 @@ import { Menu, MenuItem, IconButton } from '@mui/material';
 import DensityMediumIcon from '@mui/icons-material/DensityMedium'
 
 
-const UserSettingButton = () => {
-
+const SettingsMenu = () => {
 
     const [anchor, setAnchor] = useState(null);
     
@@ -54,4 +53,4 @@ const UserSettingButton = () => {
     );
 };
 
-export default UserSettingButton;
+export default SettingsMenu;
