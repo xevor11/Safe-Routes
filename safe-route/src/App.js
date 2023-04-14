@@ -1,44 +1,30 @@
 import { Stack } from '@mui/system';
-import { React, useState, useContext, createContext } from 'react';
+import { React } from 'react';
 import './App.css';
 import MapCont from './components/mapcontainer';
 import SearchBar from './components/search-bar';
 import TopBar from './components/topbar';
-import { UserLocationProvider } from './components/UserLocationProvider';
-
+import { LocationContextProvider } from './components/LocationProvider';
+import { ThemeContextProvider } from './components/theme';
+import ThemeToggle from './components/theme-switch';
 
 function App() {
 
   return (
-
-    <UserLocationProvider>
-      <Stack direction="column" >
-        <Stack direction="row">
-          <SearchBar />
-          <TopBar />
+    <ThemeContextProvider>
+      <LocationContextProvider>
+        <Stack direction="column" >
+          <Stack direction="row">
+            <SearchBar />
+            <TopBar />
+          </Stack>
+          <>
+            <MapCont />
+          </>
         </Stack>
-        <MapCont />
-      </Stack>
-    </UserLocationProvider>
+      </LocationContextProvider>
+    </ThemeContextProvider>
   );
-
 }
 
 export default App;
-
-
-{/* <div
-      style={{
-        display:"flex",
-        flexDirection:"column",
-        width:"auto",
-        height:"100%",
-      }}>
-      <nav style={{width:"20%", height:"10%", justifyContent:"space-between", display:"flex"}}>
-        <SearchBar/>
-        <LoginButton/>
-      </nav>
-      <div>
-        <MapCont/>
-      </div>
-    </div> */}

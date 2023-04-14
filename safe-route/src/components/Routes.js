@@ -1,32 +1,49 @@
 import L from "leaflet";
 import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
-import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
-import { useUserLocation } from "./UserLocationProvider";
+import { useLocation } from "./LocationProvider";
 
+const Routes = () => {
 
-const createRoutineMachineLayer = (props) => {;
+  const getLocationHook = useLocation()
+  //extrapolate object from useContext hook
+  const location = getLocationHook.location
 
-
+  if (location.destCoords.lat) {
     const instance = L.Routing.control({
       waypoints: [
-        L.latLng(42.843544541244476, -88.34077580556942),
-        L.latLng(43.0, -87.88195787327174)
+        L.latLng(location.userCoords.lat, location.userCoords.lng),
+        L.latLng(location.destCoords.lat, location.destCoords.lng)
       ],
       lineOptions: {
         styles: [{ color: "#6FA1EC", weight: 4 }]
       },
+      createMarker: function () { return null; },
       show: false,
       addWaypoints: false,
       routeWhileDragging: true,
       draggableWaypoints: true,
-      fitSelectedRoutes: true,      
+      fitSelectedRoutes: true,
     });
-    
-
     return instance;
-  };
+  }
+};
+
+const RoutingMachine = createControlComponent(Routes);
+
+export default RoutingMachine;
+// const RoutingMachine = () =>{
+
+//   const [routes, setRoutes] = useState(Routes);
+
+//   useEffect(() => {
+//     if(routes !== undefined || routes !== null){
+//       createControlComponent(Routes);
+//     }
+//     else {
+//       return null;
+//     }
+//   }, [routes]);
   
-  const RoutingMachine = createControlComponent(createRoutineMachineLayer);
-  
-  export default RoutingMachine;
+// } 
+
