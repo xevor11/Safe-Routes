@@ -4,7 +4,12 @@ import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
 import { destinationIcon } from "./icons/dest-icon";
 import { useLocation } from "./LocationProvider";
+function append(lat, lon){  
+  this.lat = lat;
+  this.lon = lon;
 
+}
+function checkpoly
 const Routes = () => {
 
   const getLocationHook = useLocation()
@@ -30,6 +35,7 @@ const Routes = () => {
 
     instance.on('routeselected',function(e){
       var allpoints = e.route;
+      var coordarr = new Array();
       // alert(allpoints.coordinates[0].lat);
         for(let i = 0; i < allpoints.coordinates.length; i++)
         {
@@ -37,9 +43,9 @@ const Routes = () => {
           var checklng = JSON.stringify(allpoints.coordinates[i].lng);
           var pair = ("["+checklat.concat(", ", checklng)+"]");
           console.log(pair);
-
+          coordarr.push(new append(checklat, checklng));
         }
-        
+        console.log(coordarr[0]);
     });
 
 
