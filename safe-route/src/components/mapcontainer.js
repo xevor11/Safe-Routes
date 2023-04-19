@@ -22,6 +22,7 @@ const MapCont = () => {
         />
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.userCoords.lat} lng={location.userCoords.lng}></Recenter>
+        <Polygon positions={counties} pathOptions={{color:'red'}}/>
         <RoutingMachine></RoutingMachine>
       </MapContainer>
     );
@@ -34,7 +35,7 @@ const MapCont = () => {
         />
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.userCoords.lat} lng={location.userCoords.lng}></Recenter>
-        <Polygon positions={counties} pathOptions={{color:'blue'}}/>
+      
       </MapContainer>
     );
   }
