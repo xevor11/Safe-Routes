@@ -19,7 +19,7 @@ const MapCont = () => {
   const theme = themeContext()
 
 
-  if (location.destCoords.lat) {
+  if (location.destCoords.lat && location.safetyIndex !== null) {
     return (
       <MapContainer center={[location.userCoords.lat, location.userCoords.lng]} zoom={12} style={{ width: "100%", height: "93vh", zIndex: 0 }} >
         <TileLayer
@@ -29,7 +29,7 @@ const MapCont = () => {
         />
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.userCoords.lat} lng={location.userCoords.lng}></Recenter>
-        <Polygon positions={counties} pathOptions={{color:'red'}}/>
+        <Polygon positions={counties} pathOptions={{ color: "red", safetyIndex: location.safetyIndex }}/>
         <RoutingMachine></RoutingMachine>
       </MapContainer>
     );

@@ -18,11 +18,10 @@ export function useDestLocationUpdate() {
 
 export function LocationContextProvider({ children }) {
     const [location, setLocation] = useState({
-        userCoords: {lat: 43.075647,
-                     lng: -87.886633 },
-        destCoords: {lat: null,
-                     lng: null }
-    });
+        userCoords: {lat: 43.075647, lng: -87.886633},
+        destCoords: {lat: null, lng: null},
+        safetyIndex: null // add the safetyIndex attribute
+      });
 
     useEffect(() => {
         if (navigator.geolocation) {
@@ -48,8 +47,12 @@ export function LocationContextProvider({ children }) {
     }
 
     function updateDestCoords(newCoords) {
-        setLocation(prevState => ({ ...prevState, destCoords: newCoords }));
-    }
+        setLocation(prevState => ({
+          ...prevState,
+          destCoords: newCoords,
+          safetyIndex: 0 // set a default value for safetyIndex
+        }));
+      }      
 
     return (
         <LocationContext.Provider value={{ location }}>
