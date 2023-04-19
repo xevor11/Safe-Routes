@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react";
 import L from "leaflet";
 import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
-import { destinationIcon } from "./icons/dest-icon";
 import { useLocation } from "./LocationProvider";
 function append(lat, lon){  
   this.lat = lat;
