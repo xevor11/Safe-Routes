@@ -25,6 +25,24 @@ const Routes = () => {
       draggableWaypoints: true,
       fitSelectedRoutes: true,
     });
+
+    instance.on('routeselected',function(e){
+      var allpoints = e.route;
+      // alert(allpoints.coordinates[0].lat);
+        for(let i = 0; i < allpoints.coordinates.length; i++)
+        {
+          var checklat = JSON.stringify(allpoints.coordinates[i].lat);
+          var checklng = JSON.stringify(allpoints.coordinates[i].lng);
+          var pair = ("["+checklat.concat(", ", checklng)+"]");
+          console.log(pair);
+
+        }
+        
+    });
+
+
+
+
     return instance;
   }
 };
