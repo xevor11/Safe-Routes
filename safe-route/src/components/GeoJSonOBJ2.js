@@ -1,4 +1,4 @@
-{
+export const Poly = {
     "type":"FeatureCollection",
     "features": [
       {
