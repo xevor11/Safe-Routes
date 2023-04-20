@@ -3,6 +3,7 @@ import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
 import { useLocation } from "./LocationProvider";
 
+
 function append(lat, lon){  
   this.lat = lat;
   this.lon = lon;
@@ -32,9 +33,12 @@ const Routes = () => {
       fitSelectedRoutes: true,
     });
 
-    instance.on('routeselected',function(e){
+    instance.on('routeselected',function(e){y
+      
      // var coordarr = new Array();
       var allpoints = e.route;
+      const data = require('./GeoJSonOBJ.json');
+      alert(JSON.stringify(data));
       // alert(allpoints.coordinates[0].lat);
         for(let i = 0; i < allpoints.coordinates.length; i++)
         {
