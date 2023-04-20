@@ -6,23 +6,25 @@ import SearchBar from './components/search-bar';
 import TopBar from './components/topbar';
 import Submit from './datatest';
 import { LocationContextProvider } from './components/LocationProvider';
+import { ThemeContextProvider } from './components/theme';
+import ThemeToggle from './components/theme-switch';
 
 function App() {
 
   return (
-    <LocationContextProvider>
-      <Stack direction="column" >
-        <Stack direction="row">
-          <SearchBar></SearchBar>
-     
-          <TopBar />
+    <ThemeContextProvider>
+      <LocationContextProvider>
+        <Stack direction="column" >
+          <Stack direction="row">
+            <SearchBar />
+            <TopBar />
+          </Stack>
+          <>
+            <MapCont />
+          </>
         </Stack>
-        <>
-          <MapCont />
-        </>
-       
-      </Stack>
-    </LocationContextProvider>
+      </LocationContextProvider>
+    </ThemeContextProvider>
   );
 }
 

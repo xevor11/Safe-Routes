@@ -3,7 +3,6 @@ import '@geoapify/geocoder-autocomplete/styles/minimal.css'
 import "./search-bar.css"
 import appsettings from './../appsettings.json'
 import { GeoapifyGeocoderAutocomplete, GeoapifyContext } from '@geoapify/react-geocoder-autocomplete';
-import { useLocation } from "./LocationProvider";
 import { useDestLocationUpdate } from "./LocationProvider";
 
 export default function SearchBar() {
@@ -15,8 +14,9 @@ export default function SearchBar() {
         if(value){
             setDestCoords({lat: value.properties.lat, lng: value.properties.lon});
         } else {
+            
             setDestCoords({lat: null, lng: null})
-        }                
+        }
     }
 
     function onSuggestionChange(value) {
