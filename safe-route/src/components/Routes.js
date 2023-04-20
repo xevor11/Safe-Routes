@@ -33,7 +33,7 @@ const Routes = () => {
       fitSelectedRoutes: true,
     });
 
-    instance.on('routeselected',function(e){y
+    instance.on('routeselected',function(e){
       
      // var coordarr = new Array();
       var allpoints = e.route;
