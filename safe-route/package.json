@@ -17,6 +17,7 @@
     "@turf/buffer": "^6.5.0",
     "@turf/collect": "^6.5.0",
     "auth0": "^3.2.0",
+    "firebase": "^9.19.1",
     "leaflet": "^1.9.3",
     "leaflet-draw": "^1.0.4",
     "leaflet-geosearch": "^3.7.0",
