@@ -21,8 +21,12 @@ export function RegionContextProvider({ children }) {
     const [region, setRegion] = useState(false);
 
     function getRegion() {
-        console.log(RegionOptions.region)
-        return region ? RegionOptions.region : RegionOptions.noRegion
+        if(region){
+            return RegionOptions.region
+        }
+        else{
+            return RegionOptions.noRegion
+        }
     }
 
     function updateRegionContext() {
@@ -31,7 +35,7 @@ export function RegionContextProvider({ children }) {
     }
 
     return (
-        <RegionContext.Provider value={{ getRegion }}>
+        <RegionContext.Provider value={ getRegion }>
             <UseUpdateRegionContext.Provider value={updateRegionContext}>
                     {children}
             </UseUpdateRegionContext.Provider>

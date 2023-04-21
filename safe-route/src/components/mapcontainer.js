@@ -18,8 +18,8 @@ const MapCont = () => {
   const location = getLocationHook.location
   const themeContext = useTheme()
   const theme = themeContext()
-  const region = useRegion()
-
+  const getRegion = useRegion()
+  const region = getRegion()
 
   if (location.destCoords.lat && location.safetyIndex !== null) {
     return (
