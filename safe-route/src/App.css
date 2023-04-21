@@ -1,9 +1,11 @@
+/* apply universal styles */
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
+/* styles for buttons */
 button {
   margin: 2rem 0;
   padding: 1rem 2rem;
@@ -11,15 +13,18 @@ button {
   cursor: pointer;
 }
 
+/* styles for root stack element */
 .MuiStack-root {
   position: relative;
-
 }
 
-.MuiStack-root {
-  position: relative;
-
+/* hide Leaflet routing control on mobile devices */
+@media (max-width: 768px) {
+  .leaflet-control-container .leaflet-routing-container-hide {
+    display: none;
+  }
 }
+
 
 
 .leaflet-control-container .leaflet-routing-container-hide {
