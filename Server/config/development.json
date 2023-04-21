@@ -1,0 +1,17 @@
+{
+    "app": {
+      "port": 3000,
+      "corsWhitelist": ["http://localhost:3001"]
+    },
+    "db": {
+      "uri": "mongodb://localhost:27017/mydb"
+    },
+    "jwt": {
+      "secret": "mysecret",
+      "expiresIn": "7d"
+    },
+    "logging": {
+      "level": "debug"
+    }
+  }
+  

@@ -10,7 +10,6 @@ import { useTheme } from './theme';
 import { counties } from './counties';
 import { useRegion } from './region';
 
-
 const MapCont = () => {
 
   const getLocationHook = useLocation()
