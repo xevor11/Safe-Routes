@@ -33,7 +33,7 @@ const SettingsMenu = () => {
                 aria-haspopup="true"
                 onClick={handleClick}
             >
-                <DensityMediumIcon />
+                <DensityMediumIcon sx={{ color: 'white'}}/>
             </IconButton>
             <Menu
                 id="long-menu"
