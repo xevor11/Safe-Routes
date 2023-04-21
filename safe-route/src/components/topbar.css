@@ -7,7 +7,7 @@
   }
   
   /* Desktop view */
-  @media (min-width: 1024px) {
+  @media (max-width: 768px) {
     .bar {
       background-color: #333;
       color: white;
@@ -40,7 +40,7 @@
   }
   
   /* Mobile view */
-  @media (max-width: 1023px) {
+  @media (min-width: 480px) {
     .bar {
       background-color: #333;
       color: white;
