@@ -11,10 +11,9 @@ import { RegionContextProvider } from './components/region';
 function App() {
 
   return (
-
-    <ThemeContextProvider>
-      <LocationContextProvider>
-        <RegionContextProvider>
+    <RegionContextProvider>
+      <ThemeContextProvider>
+        <LocationContextProvider>
           <Stack direction="column" >
             <Stack direction="row">
               <SearchBar />
@@ -24,9 +23,9 @@ function App() {
               <MapCont />
             </>
           </Stack>
-        </RegionContextProvider>
-      </LocationContextProvider>
-    </ThemeContextProvider>
+        </LocationContextProvider>
+      </ThemeContextProvider>
+    </RegionContextProvider>
   );
 }
 

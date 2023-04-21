@@ -30,6 +30,7 @@ export function ThemeContextProvider({ children }) {
     function updateTheme() {
 
         setTheme((theme) => !theme)
+        console.log(theme)
     }
 
     function getTheme() {

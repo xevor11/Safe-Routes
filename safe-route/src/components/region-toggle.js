@@ -2,13 +2,13 @@ import { FormControlLabel, Switch } from "@mui/material"
 import { useRegionUpdate } from "./region"
 
 
-const ThemeToggle = () => {
+const RegionToggle = () => {
 
-    const themeUpdate = useThemeUpdate()
+    const regionUpdate = useRegionUpdate()
 
 
     function handleChange() {
-        themeUpdate()
+        regionUpdate()
     }
 
     return (
@@ -18,4 +18,4 @@ const ThemeToggle = () => {
     )
 }
 
-export default ThemeToggle;
+export default RegionToggle;
