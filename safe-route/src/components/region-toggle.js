@@ -1,5 +1,6 @@
 import { FormControlLabel, Switch } from "@mui/material"
-import { useThemeUpdate } from "./theme"
+import { useRegionUpdate } from "./region"
+
 
 const ThemeToggle = () => {
 
