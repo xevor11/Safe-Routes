@@ -1,32 +1,67 @@
 import React from "react";
+import { Link as RouterLink } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-import "./Profile.css";
+import { Button, Avatar, Typography } from "@mui/material";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
-const Profile = () => {
-  const { user } = useAuth0();
+// const useStyles = makeStyles((theme) => ({
+//   button: {
+//     display: "flex",
+//     justifyContent: "center",
+//     alignItems: "center",
+//     backgroundColor: "#fff",
+//     boxShadow: "0 1px 4px rgba(0, 0, 0, 0.3)",
+//     borderRadius: 2,
+//     padding: "10px 20px",
+//     height: 48,
+//     minWidth: 120,
+//     "&:hover": {
+//       backgroundColor: "#f2f2f2",
+//     },
+//   },
+//   avatar: {
+//     marginRight: theme.spacing(1),
+//     width: 32,
+//     height: 32,
+//   },
+//   name: {
+//     fontWeight: 500,
+//     color: "#484848",
+//     marginRight: theme.spacing(1),
+//     fontSize: "1rem",
+//   },
+//   icon: {
+//     color: theme.palette.primary.main,
+//     fontSize: "1.5rem",
+//     marginRight: theme.spacing(1),
+//   },
+// }));
 
-  return (
-    <div className="profile-container">
-      <div className="header">
-        <img src={user.picture} alt={user.name} className="avatar" />
-        <div className="header-text">
-          <h2>{user.name}</h2>
-          <p>{user.email}</p>
-          <a href="#">Edit Profile</a>
-        </div>
-      </div>
-      <div className="main-content">
-        <div className="left-panel">
-          <h3>About</h3>
-          <p>{user.name} is a frequent traveler who loves exploring new places and trying new foods. She has visited over 20 countries and is always planning her next adventure. In her free time, she enjoys hiking, reading, and learning new languages.</p>
-        </div>
-        <div className="right-panel">
-          <h3>Places Visited</h3>
-          <ul>
-            <li>Milwaukee</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
+// const ProfileButton = () => {
+//   const classes = useStyles();
+//   const { isAuthenticated, user } = useAuth0();
+
+//   if (!isAuthenticated) {
+//     return null;
+//   }
+
+//   const { name, picture } = user;
+
+//   return (
+//     <Button
+//       variant="contained"
+//       component={RouterLink}
+//       to={`/profile/${user.sub}`}
+//       className={classes.button}
+//     >
+//       <Avatar className={classes.avatar} src={picture} alt={name} />
+//       <Typography variant="subtitle1" className={classes.name}>
+//         {name}
+//       </Typography>
+//       <LocationOnIcon className={classes.icon} />
+//     </Button>
+//   );
+// };
+
+// export default ProfileButton;
+
