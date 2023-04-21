@@ -1,22 +1,24 @@
 import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth } from "reactfire";
 import { Button } from "@mui/material";
 
 const SignupButton = () => {
-    const { loginWithRedirect, isAuthenticated } = useAuth0();
-    return (
-        !isAuthenticated && (
-            <Button variant="contained" color="primary"
-                onClick={ () => 
-                    loginWithRedirect({
-                        screen_hint: 'signup',
-                    })
-                }
-            >
-                Sign Up
-            </Button>
-        )
-    );
-}
+  const auth = useAuth();
+  const provider = new auth.GoogleAuthProvider();
+
+  const handleSignUp = async () => {
+    try {
+      await auth.signInWithPopup(provider);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  return (
+    <Button variant="contained" color="primary" onClick={handleSignUp}>
+      Sign Up
+    </Button>
+  );
+};
 
 export default SignupButton;
