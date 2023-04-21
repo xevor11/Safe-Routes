@@ -20,6 +20,28 @@
    padding: 0;
  }
  
+ /* For mobile devices */
+ @media (max-width: 768px) {
+   .searchBox {
+     height: 10vh;
+   }
+   
+   .searchBox input[type="text"] {
+     font-size: 1rem;
+   }
+ }
+ 
+ /* For desktop devices */
+ @media (min-width: 769px) {
+   .searchBox {
+     height: 7vh;
+   }
+   
+   .searchBox input[type="text"] {
+     font-size: 1.2rem;
+   }
+ }
+ 
  .searchBox .geoapify-autocomplete-items {
    position: absolute;
    top: 100%;
