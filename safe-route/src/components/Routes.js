@@ -33,26 +33,21 @@ const Routes = () => {
       fitSelectedRoutes: true,
     });
 
-    instance.on('routeselected',function(e){
-      
-     // var coordarr = new Array();
-      var allpoints = e.route;
-      const data = require('./GeoJSonOBJ.json');
-      alert(JSON.stringify(data));
-      // alert(allpoints.coordinates[0].lat);
-        for(let i = 0; i < allpoints.coordinates.length; i++)
-        {
-          var checklat = JSON.stringify(allpoints.coordinates[i].lat);
-          var checklng = JSON.stringify(allpoints.coordinates[i].lng);
-          var pair = ("["+checklat.concat(", ", checklng)+"]");
-          //console.log(pair);
-         // coordarr.push(new append(checklat, checklng));
+    // instance.on('routeselected',function(e){
+    //  // var coordarr = new Array();
+    //   var allpoints = e.route;
+    //   // alert(allpoints.coordinates[0].lat);
+    //     for(let i = 0; i < allpoints.coordinates.length; i++)
+    //     {
+    //       var checklat = JSON.stringify(allpoints.coordinates[i].lat);
+    //       var checklng = JSON.stringify(allpoints.coordinates[i].lng);
+    //       var pair = ("["+checklat.concat(", ", checklng)+"]");
+    //       //console.log(pair);
+    //      // coordarr.push(new append(checklat, checklng));
 
-        }
-        //console.log(coordarr[0].lat);
-    });
-
-
+    //     }
+    //     //console.log(coordarr[0].lat);
+    // });
 
 
     return instance;

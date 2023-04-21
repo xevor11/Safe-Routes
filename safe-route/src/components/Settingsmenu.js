@@ -3,6 +3,7 @@ import React from 'react';
 import { useThemeUpdate } from './theme';
 import { Menu, MenuItem, IconButton } from '@mui/material';
 import DensityMediumIcon from '@mui/icons-material/DensityMedium'
+import { useRegionUpdate } from './region'
 
 
 const SettingsMenu = () => {
@@ -20,6 +21,7 @@ const SettingsMenu = () => {
     };
 
     const ToggleTheme = useThemeUpdate()
+    const ToggleRegion = useRegionUpdate()
 
     return (
         <>
@@ -48,6 +50,8 @@ const SettingsMenu = () => {
                 }}
             >
                 <MenuItem onClick={ToggleTheme}>Change Theme</MenuItem>
+                <MenuItem onClick={ToggleRegion}>Toggle regions</MenuItem>
+                
             </Menu>
         </>
     );

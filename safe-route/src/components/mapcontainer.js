@@ -8,6 +8,7 @@ import { useLocation } from './LocationProvider';
 import appsettings from './../appsettings.json'
 import { useTheme } from './theme';
 import { counties } from './counties';
+import { useRegion } from './region';
 
 const MapCont = () => {
 
@@ -16,7 +17,8 @@ const MapCont = () => {
   const location = getLocationHook.location
   const themeContext = useTheme()
   const theme = themeContext()
-
+  const getRegion = useRegion()
+  const region = getRegion()
 
   if (location.destCoords.lat && location.safetyIndex !== null) {
     return (
@@ -28,7 +30,7 @@ const MapCont = () => {
         />
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.userCoords.lat} lng={location.userCoords.lng}></Recenter>
-        <Polygon positions={counties} pathOptions={{ color: "red", safetyIndex: location.safetyIndex }}/>
+        <Polygon positions={region} pathOptions={{ color: "red", safetyIndex: location.safetyIndex }}/>
         <RoutingMachine></RoutingMachine>
       </MapContainer>
     );
@@ -42,7 +44,7 @@ const MapCont = () => {
         />
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.userCoords.lat} lng={location.userCoords.lng}></Recenter>
-        <Polygon positions={counties} pathOptions={{ color: "red", safetyIndex: location.safetyIndex }}/>
+        <Polygon positions={region} pathOptions={{ color: "red", safetyIndex: location.safetyIndex }}/>
       </MapContainer>
     );
   }
