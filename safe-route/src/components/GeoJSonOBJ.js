@@ -1,4 +1,4 @@
-{
+export const json = {
     "type":"FeatureCollection",
     "features": [
       {
@@ -150961,4 +150961,4 @@
         }
       }
     ]
-  }
+  };

@@ -2,7 +2,7 @@ import L from "leaflet";
 import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
 import { useLocation } from "./LocationProvider";
-
+import {regioncheck} from "./RegionCross";
 
 const Routes = () => {
 
@@ -27,6 +27,7 @@ const Routes = () => {
       fitSelectedRoutes: true,
     });
 
+    regioncheck(instance);
     // instance.on('routeselected',function(e){
     //  // var coordarr = new Array();
     //   var allpoints = e.route;
