@@ -7,7 +7,6 @@ import RoutingMachine from './Routes';
 import { useLocation } from './LocationProvider';
 import appsettings from './../appsettings.json'
 import { useTheme } from './theme';
-import { counties } from './counties';
 import { useRegion } from './region';
 
 const MapCont = () => {
