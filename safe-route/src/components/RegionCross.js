@@ -2,6 +2,11 @@ import collect from '@turf/collect';
 import booleanPointInPolygon from '@turf/boolean-point-in-polygon';
 import * as turf from '@turf/turf';
 import { json } from './GeoJSonOBJ';
+
+
+var safetyrate = 0;
+var counter = 0;
+
 function intersect(point1,point2, polygon, index){
 
   var coordinate = turf.point([point2,point1]);
@@ -13,6 +18,8 @@ function intersect(point1,point2, polygon, index){
      if(check == true)
      {
       console.log(json.features[index].properties.MuniName);
+      counter +=1;
+      safetyrate +=json.features[index].properties.SafetyIndex
 
     }
     
@@ -26,8 +33,11 @@ function intersect(point1,point2, polygon, index){
           if(check == true)
           {
             console.log(json.features[index].properties.MuniName);
+            counter +=1;
+            safetyrate +=json.features[index].properties.SafetyIndex
           }
   }
+  console.log("Your Safety Index So Far: " + (json.features[index].properties.SafetyIndex));
  
 }
 
@@ -37,6 +47,9 @@ export function regioncheck (instance){
 
   
 console.log("length of array features = "+ json.features.length);
+
+
+
       var allpoints = e.route;
         for(let i = 0; i < allpoints.coordinates.length; i+=10)
         {
@@ -50,9 +63,12 @@ console.log("length of array features = "+ json.features.length);
            
            intersect(allpoints.coordinates[i].lat,allpoints.coordinates[i].lng,json.features[j].geometry, j);
          
-         }
+          }
 
         }
+        console.log("Number of Cities entered: " + counter);
+        
+         alert("Your Safety Index for this route is: " + (safetyrate/counter));
 
     });
 
