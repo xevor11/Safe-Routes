@@ -1,6 +1,5 @@
 * {
-  position: relative;
-  box-sizing: border-box;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 600px) {
@@ -8,19 +7,20 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    position: absolute;
-    top: .4vh;
     align-content: center;
-    z-index: 2;  
-    width: 70vw; 
+    width: 68vw;
+    touch-action: none;
   }
   
   .searchBox {
-    align-items: center;
     background-color: #333;
     position: absolute;
     padding: .5rem;
     height: 7vh;
+    touch-action: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
   
   .geoapify-close-button {
@@ -28,32 +28,32 @@
   }
   
   .geoapify-autocomplete-items {
-    z-index: 1;
     width: calc(100% - 40px);
   }
   
-  .geoapify-autocomplete-item {
-    z-index: 1;
+  input[type="text"]{
+    font-size:16px;
   }
 }
 
 @media only screen and (min-width: 768px) {
+
   .geocoder-container {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 1vh;
     align-items: center;
     align-content: center;
-    z-index: 1;   
+    width: 50vw;
   }
   
   .searchBox {
     width: 60vw;
-    vertical-align: center;
     background-color: #333;
     padding: .5rem;
     height: 7vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
   
   .geoapify-close-button {
@@ -61,12 +61,8 @@
   }
   
   .geoapify-autocomplete-items {
-    z-index: 1;
     width: calc(100% - 40px);
   }
   
-  .geoapify-autocomplete-item {
-    z-index: 1;
-  }
 }
 
