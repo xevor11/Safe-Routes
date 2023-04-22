@@ -7,7 +7,6 @@ import RoutingMachine from './Routes';
 import { useLocation } from './LocationProvider';
 import appsettings from './../appsettings.json'
 import { useTheme } from './theme';
-import { counties } from './counties';
 import { useRegion } from './region';
 
 const MapCont = () => {
@@ -22,7 +21,7 @@ const MapCont = () => {
 
   if (location.destCoords.lat && location.safetyIndex !== null) {
     return (
-      <MapContainer center={[location.userCoords.lat, location.userCoords.lng]} zoom={12} style={{ width: "100%", height: "93vh", zIndex: 0 }} >
+      <MapContainer center={[location.userCoords.lat, location.userCoords.lng]} zoom={12} style={{ width: "100%", height: "100vh", zIndex: 0}} >
         <TileLayer
           attribution={theme.attribution}
           url={theme.url}
@@ -36,7 +35,7 @@ const MapCont = () => {
     );
   } else {
     return (
-      <MapContainer center={[location.userCoords.lat, location.userCoords.lng]} zoom={12} style={{ width: "100%", height: "93vh", zIndex: 0 }}>
+      <MapContainer center={[location.userCoords.lat, location.userCoords.lng]} zoom={12} style={{ width: "100%", height: "100vh", zIndex: 0, position:"fixed" }}>
         <TileLayer
           attribution={theme.attribution}
           url={theme.url}

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  touch-action: none;
 }
 
 /* styles for buttons */
@@ -15,7 +16,9 @@ button {
 
 /* styles for root stack element */
 .MuiStack-root {
-  position: relative;
+  position: fixed;
+  z-index: 1;
+  touch-action: none;
 }
 
 /* hide Leaflet routing control on mobile devices */

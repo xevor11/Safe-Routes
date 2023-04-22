@@ -31,7 +31,6 @@ export function RegionContextProvider({ children }) {
 
     function updateRegionContext() {
         setRegion((region) => !region)
-        console.log(region)
     }
 
     return (

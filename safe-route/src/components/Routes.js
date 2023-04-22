@@ -4,13 +4,6 @@ import "leaflet-routing-machine";
 import { useLocation } from "./LocationProvider";
 import {regioncheck} from "./RegionCross";
 
-
-function append(lat, lon){  
-  this.lat = lat;
-  this.lon = lon;
-
-}
-
 const Routes = () => {
 
   const getLocationHook = useLocation()
@@ -44,18 +37,3 @@ const Routes = () => {
 const RoutingMachine = createControlComponent(Routes);
 
 export default RoutingMachine;
-// const RoutingMachine = () =>{
-
-//   const [routes, setRoutes] = useState(Routes);
-
-//   useEffect(() => {
-//     if(routes !== undefined || routes !== null){
-//       createControlComponent(Routes);
-//     }
-//     else {
-//       return null;
-//     }
-//   }, [routes]);
-  
-// } 
-
