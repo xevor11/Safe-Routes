@@ -9,7 +9,7 @@ const themeOptions = {
         url: 'https://{s}.tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token={accessToken}'
     },
     dark: {
-        attribution: '<a href=\"https://www.jawg.io\" target=\"_blank\">&copy; Jawg</a> - <a href=\"https://www.openstreetmap.org\" target=\"_blank\">&copy; OpenStreetMap</a>&nbsp;contributors',
+        attribution: '<a href="https://www.jawg.io" target="_blank">&copy; Jawg</a> - <a href="https://www.openstreetmap.org" target="_blank">&copy; OpenStreetMap</a>&nbsp;contributors',
         url: 'https://tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token=TRn9STvPIYmh0g4k5C3R4CEWeU72bxzAav0aeu1TANhjmYPbdJRoTpUSehgZW1At'
     }
 }
@@ -22,15 +22,12 @@ export function useThemeUpdate() {
     return useContext(UpdateThemeContext)
 }
 
-
 export function ThemeContextProvider({ children }) {
 
     const [theme, setTheme] = useState(true)
 
-    function updateTheme() {
-
+    function updateTheme(){
         setTheme((theme) => !theme)
-
     }
 
     function getTheme() {
@@ -41,7 +38,6 @@ export function ThemeContextProvider({ children }) {
             return themeOptions.dark
         }
     }
-
     return (
         <ThemeContext.Provider value={getTheme}>
             <UpdateThemeContext.Provider value={updateTheme}>
