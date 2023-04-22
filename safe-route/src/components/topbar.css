@@ -19,6 +19,7 @@
         padding: 0 .5rem;
         position: relative;
         width: 100vw;
+        z-index: 1;
       }
     
       .bar ul {

@@ -15,7 +15,8 @@ button {
 
 /* styles for root stack element */
 .MuiStack-root {
-  position: relative;
+  position: fixed;
+  z-index: 1;
 }
 
 /* hide Leaflet routing control on mobile devices */
