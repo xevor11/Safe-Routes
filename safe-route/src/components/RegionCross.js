@@ -37,7 +37,7 @@ function intersect(point1,point2, polygon, index){
             safetyrate +=json.features[index].properties.SafetyIndex
           }
   }
-  console.log("Your Safety Index So Far: " + (json.features[index].properties.SafetyIndex));
+
  
 }
 
@@ -58,7 +58,7 @@ console.log("length of array features = "+ json.features.length);
           var checklng = JSON.stringify(allpoints.coordinates[i].lng);
           var pair = ("["+checklat.concat(", ", checklng)+"]");
 
-           for (let j = 0; j < 259; j++)
+           for (let j = 0; j < json.features.length; j++)
           {
            
            intersect(allpoints.coordinates[i].lat,allpoints.coordinates[i].lng,json.features[j].geometry, j);
@@ -67,8 +67,13 @@ console.log("length of array features = "+ json.features.length);
 
         }
         console.log("Number of Cities entered: " + counter);
-        
-         alert("Your Safety Index for this route is: " + (safetyrate/counter));
+        if(safetyrate == 0)
+        {
+          alert("Your route must travel through the Milwaukee area in order for a safety index to be calculated.");
+        }
+        else alert("Your Safety Index for this route is: " + (safetyrate/counter));
+        safetyrate = 0;
+        counter = 0;
 
     });
 
