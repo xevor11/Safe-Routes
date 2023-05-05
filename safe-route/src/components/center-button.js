@@ -12,7 +12,6 @@ const CenterButton = () => {
     const useCenterContext = useCenterLocationUpdate()
 
     function UpdateCoords() {
-        console.log(location.centerCoords)
         useCenterContext(location.userCoords)
     }
 

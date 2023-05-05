@@ -52,8 +52,7 @@ export function LocationContextProvider({ children }) {
         }
     }, [location]);
 
-    function updateCenterCoords(newCoords) {
-        setLocation(prevState => ({ ...prevState, centerCoords: [0,0] }));
+    function updateCenterCoords(newCoords) {        
         setLocation(prevState => ({ ...prevState, centerCoords: newCoords }));        
     }
 

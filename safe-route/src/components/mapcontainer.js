@@ -9,6 +9,8 @@ import appsettings from './../appsettings.json';
 import { useTheme } from './theme';
 import { useRegion } from './region';
 import CenterButton from './center-button';
+import MapTap from './map-tap';
+
 
 const MapCont = () => {
 
@@ -32,6 +34,7 @@ const MapCont = () => {
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.centerCoords.lat} lng={location.centerCoords.lng}></Recenter>
         <Polygon positions={region} pathOptions={{ color: "red", safetyIndex: location.safetyIndex }} />
+        <MapTap></MapTap>
         <RoutingMachine></RoutingMachine>
       </MapContainer>
     );
@@ -46,6 +49,7 @@ const MapCont = () => {
         <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
         <Recenter lat={location.centerCoords.lat} lng={location.centerCoords.lng}></Recenter>
         <Polygon positions={region} pathOptions={{ color: "red", safetyIndex: location.safetyIndex }} />
+        <MapTap></MapTap>
       </MapContainer>
     );
   }
