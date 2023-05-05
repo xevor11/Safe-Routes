@@ -2,6 +2,7 @@ import AuthenticationButton from './authentication-button'
 import './topbar.css'
 import SettingsMenu from "./Settingsmenu";
 import { useMediaQuery } from '@mui/material';
+import CenterButton from './center-button';
 
 export default function TopBar() {
 
@@ -13,7 +14,7 @@ export default function TopBar() {
         <nav className="bar">{safeRoute}
 
             <SettingsMenu className="menu"></SettingsMenu>
-
+            <CenterButton/>
             <AuthenticationButton id="authButton"/>
         </nav>
     )

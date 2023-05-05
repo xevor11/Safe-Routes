@@ -1,0 +1,7 @@
+@media only screen and (min-width: 768) {
+    .centerButton {
+        z-index: 5;
+        position: absolute;
+        left: 50%
+    }
+}

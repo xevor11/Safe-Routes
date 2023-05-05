@@ -20,8 +20,8 @@ function App() {
               <SearchBar />
               <TopBar />
             </Stack>
-            <>
-              <MapCont />
+            <>                            
+              <MapCont />              
             </>
           </Stack>
         </LocationContextProvider>
