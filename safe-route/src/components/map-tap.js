@@ -11,8 +11,7 @@ const MapTap = () => {
 
     function OnClick() {
         const center = map.getCenter()
-
-        console.log(center)
+        useCenter(center)
     }
 
     map.on('click drag', () => {
