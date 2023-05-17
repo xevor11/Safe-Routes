@@ -6,6 +6,8 @@ import { json } from './GeoJSonOBJ';
 
 var safetyrate = 0;
 var counter = 0;
+var safetyIndex = 0;
+
 
 function intersect(point1,point2, polygon, index){
 
@@ -40,16 +42,21 @@ function intersect(point1,point2, polygon, index){
 
  
 }
+function mathstuff(sf,cnt){
 
-export function regioncheck (instance){
+  var resultss = Math.round(sf/cnt*100)/100;
+  safetyIndex = resultss;
 
- var result = instance.on('routeselected',function(e){
+  return resultss;
 
-  
-console.log("length of array features = "+ json.features.length);
+}
 
+export function regioncheck(instance)
+{
 
-
+var result = instance.on('routeselected',function(e)
+    {
+      console.log("length of array features = "+ json.features.length);
       var allpoints = e.route;
         for(let i = 0; i < allpoints.coordinates.length; i+=10)
         {
@@ -71,12 +78,16 @@ console.log("length of array features = "+ json.features.length);
         {
           alert("Your route must travel through the Milwaukee area in order for a safety index to be calculated.");
         }
-        else alert("Your Safety Index for this route is: " + (Math.round(safetyrate/counter*100)/100));
+        else {
+          
+          alert("Your Safety Index for this route is: " + mathstuff(safetyrate, counter));
+          
+        }
         safetyrate = 0;
-        counter = 0;
-
-    });
-
-return(result);
-
+        counter = 0;  
+        
+      });
+     
+      
 }
+
