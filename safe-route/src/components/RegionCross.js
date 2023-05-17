@@ -71,7 +71,7 @@ console.log("length of array features = "+ json.features.length);
         {
           alert("Your route must travel through the Milwaukee area in order for a safety index to be calculated.");
         }
-        else alert("Your Safety Index for this route is: " + (safetyrate/counter));
+        else alert("Your Safety Index for this route is: " + (Math.round(safetyrate/counter*100)/100));
         safetyrate = 0;
         counter = 0;
 
