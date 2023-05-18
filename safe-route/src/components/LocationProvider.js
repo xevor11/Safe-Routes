@@ -32,7 +32,7 @@ export function LocationContextProvider({ children }) {
     useEffect(() => {
         if (navigator.geolocation) {
             const successCallback = (position) => {
-                if (location.centerCoords === location.userCoords) {
+                if ((location.centerCoords.lat === location.userCoords.lat) && (location.centerCoords.lng === location.userCoords.lng)) {
                     setLocation(prevState => ({ ...prevState, userCoords: { lat: position.coords.latitude, lng: position.coords.longitude }, centerCoords: { lat: position.coords.latitude, lng: position.coords.longitude } }));
                 } else {
                     setLocation(prevState => ({ ...prevState, userCoords: { lat: position.coords.latitude, lng: position.coords.longitude } }));

@@ -1,23 +1,22 @@
-import collect from '@turf/collect';
-import booleanPointInPolygon from '@turf/boolean-point-in-polygon';
+// import collect from '@turf/collect';
+// import booleanPointInPolygon from '@turf/boolean-point-in-polygon';
 import * as turf from '@turf/turf';
 import { json } from './GeoJSonOBJ';
 
 
 var safetyrate = 0;
 var counter = 0;
-var safetyIndex = 0;
 
 
 function intersect(point1,point2, polygon, index){
 
   var coordinate = turf.point([point2,point1]);
-  if(polygon.type == "MultiPolygon")
+  if(polygon.type === "MultiPolygon")
   {
     
     var poly = turf.multiPolygon(polygon.coordinates);
     var check = turf.booleanPointInPolygon(coordinate, poly);
-     if(check == true)
+     if(check === true)
      {
       console.log(json.features[index].properties.MuniName);
       counter +=1;
@@ -29,10 +28,10 @@ function intersect(point1,point2, polygon, index){
   else
   {
 
-      var poly = turf.polygon(polygon.coordinates);
-      var check = turf.booleanPointInPolygon(coordinate, poly)
+      poly = turf.polygon(polygon.coordinates);
+      check = turf.booleanPointInPolygon(coordinate, poly)
   
-          if(check == true)
+          if(check === true)
           {
             console.log(json.features[index].properties.MuniName);
             counter +=1;
@@ -45,7 +44,6 @@ function intersect(point1,point2, polygon, index){
 function mathstuff(sf,cnt){
 
   var resultss = Math.round(sf/cnt*100)/100;
-  safetyIndex = resultss;
 
   return resultss;
 
@@ -74,7 +72,7 @@ var result = instance.on('routeselected',function(e)
 
         }
         console.log("Number of Cities entered: " + counter);
-        if(safetyrate == 0)
+        if(safetyrate === 0)
         {
           alert("Your route must travel through the Milwaukee area in order for a safety index to be calculated.");
         }
