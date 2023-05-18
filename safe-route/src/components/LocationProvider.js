@@ -77,7 +77,6 @@ export function LocationContextProvider({ children }) {
         setLocation((prevState) => ({
             ...prevState,
             destCoords: newCoords,
-            safetyIndex: 0 // set a default value for safetyIndex
         }));
     }
 
