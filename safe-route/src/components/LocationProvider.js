@@ -32,7 +32,6 @@ export function LocationContextProvider({ children }) {
         userCoords: { lat: 43.075647, lng: -87.886633 },
         destCoords: { lat: null, lng: null },
         centerCoords: { lat: 43.075647, lng: -87.886633 },
-        safetyIndex: null, // add the safetyIndex attribute
         centered: true
     });
 
@@ -84,7 +83,6 @@ export function LocationContextProvider({ children }) {
 
     return (
         <LocationContext.Provider value={{ location }}>
-
             <UpdateUserLocationContext.Provider value={updateUserCoords}>
                 <UpdateDestLocationContext.Provider value={updateDestCoords}>
                     <UpdateCentered.Provider value={updateCentered}>
@@ -94,7 +92,6 @@ export function LocationContextProvider({ children }) {
                     </UpdateCentered.Provider>
                 </UpdateDestLocationContext.Provider>
             </UpdateUserLocationContext.Provider>
-
         </LocationContext.Provider>
     )
 }
