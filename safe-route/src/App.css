@@ -39,3 +39,7 @@ h3 {
 h2 {
   display: none;
 }
+
+.leaflet-control-zoom {
+  display: none;
+}
