@@ -1,7 +1,18 @@
 import React from 'react';
-import { Button } from '@mui/material';
+import { Button, styled } from '@mui/material';
 import { useLocation } from './LocationProvider';
 import { useCenterLocationUpdate } from './LocationProvider';
+
+
+const ButtonContainer = styled('div')({
+    position: 'fixed',
+    bottom: '10vh', // Adjust the distance from the bottom as needed
+    left: '50%',
+    transform: 'translateX(-50%)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+});
 
 
 const CenterButton = () => {
@@ -16,14 +27,14 @@ const CenterButton = () => {
     }
 
     return (
-    <Button
-        className="centerButton"
-        onClick={UpdateCoords}
-    >
-        Recenter
-    </Button>
+        <ButtonContainer>
+            <Button variant="contained" color="primary"
+                onClick={UpdateCoords}
+            >
+                CENTER
+            </Button>
+        </ButtonContainer>
     );
-
 }
 
 export default CenterButton;

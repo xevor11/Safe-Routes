@@ -1,12 +1,19 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Button } from '@mui/material';
+import { Button, styled } from '@mui/material';
+
+
+const StyledButton = styled(Button)({
+  width: '3vw',
+})
+
 
 const LogoutButton = () => {
   const { logout, isAuthenticated } = useAuth0();
+
   return (
     isAuthenticated && (      
-      <Button variant="contained" color="primary"
+      <StyledButton variant="contained" color="primary"
         onClick={() =>
           logout({
             returnTo: window.location.origin,
@@ -14,7 +21,7 @@ const LogoutButton = () => {
         }
       >
       Log Out
-    </Button>
+    </StyledButton>
     )
   );
 }

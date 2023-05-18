@@ -40,10 +40,6 @@ body {
     padding: .25rem;
   }
 
-  .MuiButtonBase-root {
-    display: flex;
-    width: 3vw;
-  }
 }
 
 /* Desktop view */
@@ -76,9 +72,5 @@ body {
     display: flex;
     align-items: center;
     padding: .25rem;
-  }
-
-  .MuiButtonBase-root {
-    width: 3vw;
   }
 }
