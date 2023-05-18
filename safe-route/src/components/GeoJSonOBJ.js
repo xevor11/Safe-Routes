@@ -50,8 +50,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -107,8 +107,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -164,7 +164,9 @@ export const json = {
             ]
           ]
         },
-        "properties": {
+              "properties": {
+       
+          "SafetyIndex": 8,
           "MuniName": "Franklin"
         }
       },
@@ -217,8 +219,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greendale"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Greendale"
         }
       },
       {
@@ -274,8 +276,9 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+                    "properties": {
+       
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -331,8 +334,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -380,8 +383,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -429,8 +432,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -478,8 +481,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -531,8 +534,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -584,8 +587,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -633,8 +636,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -682,8 +685,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -731,8 +734,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -780,8 +783,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -829,8 +832,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -878,8 +881,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -927,8 +930,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -976,8 +979,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1025,8 +1028,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1074,8 +1077,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1123,8 +1126,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1172,8 +1175,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1221,8 +1224,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1270,8 +1273,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1319,8 +1322,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1368,8 +1371,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1417,8 +1420,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1466,8 +1469,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1515,8 +1518,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1572,8 +1575,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1629,8 +1632,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1686,8 +1689,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1743,8 +1746,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1800,8 +1803,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -1853,8 +1856,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Franklin"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Franklin"
         }
       },
       {
@@ -24070,8 +24073,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "South Milwaukee"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "South Milwaukee"
         }
       },
       {
@@ -24127,8 +24130,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "South Milwaukee"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "South Milwaukee"
         }
       },
       {
@@ -24184,8 +24187,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "South Milwaukee"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "South Milwaukee"
         }
       },
       {
@@ -24241,8 +24244,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -24298,8 +24301,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -24351,8 +24354,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -24400,8 +24403,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -24449,8 +24452,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -24498,8 +24501,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -24547,8 +24550,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -24600,8 +24603,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "South Milwaukee"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "South Milwaukee"
         }
       },
       {
@@ -43273,8 +43276,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "South Milwaukee"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "South Milwaukee"
         }
       },
       {
@@ -58398,8 +58401,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -58447,8 +58450,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "South Milwaukee"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "South Milwaukee"
         }
       },
       {
@@ -58496,8 +58499,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -58545,8 +58548,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -58594,8 +58597,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -58643,8 +58646,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -58692,8 +58695,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -58741,8 +58744,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -58790,8 +58793,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -58839,8 +58842,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -58888,8 +58891,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -70157,8 +70160,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99234,8 +99237,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99283,8 +99286,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99332,8 +99335,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99381,8 +99384,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99430,8 +99433,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99479,8 +99482,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99540,8 +99543,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99597,8 +99600,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99654,8 +99657,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99711,8 +99714,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99768,8 +99771,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -99885,8 +99888,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -110314,8 +110317,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Oak Creek"
+              "properties": {
+             "SafetyIndex": 7,  "MuniName": "Oak Creek"
         }
       },
       {
@@ -110371,8 +110374,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -110432,8 +110435,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -110497,8 +110500,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -110562,8 +110565,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -110619,8 +110622,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -110676,8 +110679,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -110725,8 +110728,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -110774,8 +110777,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -110823,8 +110826,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -110872,8 +110875,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -110921,8 +110924,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -110970,8 +110973,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -111019,8 +111022,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -111068,8 +111071,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -111117,8 +111120,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -111166,8 +111169,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -111215,8 +111218,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -111264,8 +111267,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -111313,8 +111316,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -111362,8 +111365,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -111411,8 +111414,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -111460,8 +111463,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -111513,8 +111516,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -111566,8 +111569,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -111619,8 +111622,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -111672,8 +111675,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -111721,8 +111724,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greendale"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Greendale"
         }
       },
       {
@@ -111770,8 +111773,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greendale"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Greendale"
         }
       },
       {
@@ -111819,8 +111822,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Hales Corners"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Hales Corners"
         }
       },
       {
@@ -111868,8 +111871,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Hales Corners"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Hales Corners"
         }
       },
       {
@@ -111921,8 +111924,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Hales Corners"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Hales Corners"
         }
       },
       {
@@ -111978,8 +111981,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Hales Corners"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Hales Corners"
         }
       },
       {
@@ -112035,8 +112038,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greendale"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Greendale"
         }
       },
       {
@@ -112088,8 +112091,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greendale"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Greendale"
         }
       },
       {
@@ -112145,8 +112148,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greendale"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Greendale"
         }
       },
       {
@@ -112202,8 +112205,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Greenfield"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Greenfield"
         }
       },
       {
@@ -112243,8 +112246,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -112376,8 +112379,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -112429,8 +112432,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -112486,8 +112489,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -112535,8 +112538,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -112584,8 +112587,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -112633,8 +112636,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -117514,8 +117517,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -118699,8 +118702,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "St. Francis"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "St. Francis"
         }
       },
       {
@@ -118980,8 +118983,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -119029,8 +119032,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -119078,8 +119081,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -119127,8 +119130,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -119176,8 +119179,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -119225,8 +119228,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -119274,8 +119277,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -119323,8 +119326,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "St. Francis"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "St. Francis"
         }
       },
       {
@@ -119616,8 +119619,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Cudahy"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Cudahy"
         }
       },
       {
@@ -120601,8 +120604,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Cudahy"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Cudahy"
         }
       },
       {
@@ -121674,8 +121677,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Cudahy"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Cudahy"
         }
       },
       {
@@ -121723,8 +121726,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Cudahy"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Cudahy"
         }
       },
       {
@@ -121772,8 +121775,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Cudahy"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Cudahy"
         }
       },
       {
@@ -121821,8 +121824,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -121870,8 +121873,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -121919,8 +121922,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -121976,8 +121979,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -122033,8 +122036,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -122090,8 +122093,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -122147,8 +122150,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Cudahy"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Cudahy"
         }
       },
       {
@@ -122204,8 +122207,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Cudahy"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Cudahy"
         }
       },
       {
@@ -123241,8 +123244,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Cudahy"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Cudahy"
         }
       },
       {
@@ -123306,8 +123309,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123363,8 +123366,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123420,8 +123423,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123477,8 +123480,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123534,8 +123537,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123587,8 +123590,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -123636,8 +123639,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -123685,8 +123688,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123734,8 +123737,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123783,8 +123786,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123832,8 +123835,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123881,8 +123884,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123930,8 +123933,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -123979,8 +123982,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -124028,8 +124031,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -124077,8 +124080,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -124126,8 +124129,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -124175,8 +124178,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -124224,8 +124227,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -124273,8 +124276,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -124322,8 +124325,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -124371,8 +124374,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -124420,8 +124423,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -124469,8 +124472,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -124518,8 +124521,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -124575,8 +124578,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -124624,8 +124627,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -124673,8 +124676,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -124722,8 +124725,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -124771,8 +124774,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Wauwatosa"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Wauwatosa"
         }
       },
       {
@@ -124824,8 +124827,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -124881,8 +124884,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -124946,8 +124949,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -125015,8 +125018,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "West Allis"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "West Allis"
         }
       },
       {
@@ -125088,8 +125091,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -125149,8 +125152,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -127854,8 +127857,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Shorewood"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Shorewood"
         }
       },
       {
@@ -127911,8 +127914,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Shorewood"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Shorewood"
         }
       },
       {
@@ -127968,8 +127971,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Glendale"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Glendale"
         }
       },
       {
@@ -128029,8 +128032,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -128086,8 +128089,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -128147,8 +128150,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -128196,8 +128199,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -129809,8 +129812,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -129898,8 +129901,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -130155,8 +130158,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -130376,8 +130379,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -130425,8 +130428,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -130478,8 +130481,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -130527,8 +130530,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -130584,8 +130587,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -130641,8 +130644,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -130726,8 +130729,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -131617,8 +131620,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -131698,8 +131701,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -132145,8 +132148,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -132198,8 +132201,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -132247,8 +132250,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -132300,8 +132303,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -132365,8 +132368,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -132842,8 +132845,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -132895,8 +132898,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "River Hills"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "River Hills"
         }
       },
       {
@@ -132952,8 +132955,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Brown Deer"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Brown Deer"
         }
       },
       {
@@ -133009,8 +133012,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Brown Deer"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Brown Deer"
         }
       },
       {
@@ -133066,8 +133069,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133123,8 +133126,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133176,8 +133179,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133225,8 +133228,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133274,8 +133277,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133323,8 +133326,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133372,8 +133375,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Brown Deer"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Brown Deer"
         }
       },
       {
@@ -133421,8 +133424,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Brown Deer"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Brown Deer"
         }
       },
       {
@@ -133470,8 +133473,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "River Hills"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "River Hills"
         }
       },
       {
@@ -133519,8 +133522,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133568,8 +133571,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133617,8 +133620,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133666,8 +133669,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133715,8 +133718,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133764,8 +133767,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133821,8 +133824,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133870,8 +133873,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133919,8 +133922,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -133968,8 +133971,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134017,8 +134020,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134070,8 +134073,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134119,8 +134122,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134168,8 +134171,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134217,8 +134220,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134266,8 +134269,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134315,8 +134318,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134372,8 +134375,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134429,8 +134432,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134486,8 +134489,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134543,8 +134546,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134600,8 +134603,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134661,8 +134664,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134722,8 +134725,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -134971,8 +134974,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Bayside"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Bayside"
         }
       },
       {
@@ -135532,8 +135535,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Bayside"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Bayside"
         }
       },
       {
@@ -135589,8 +135592,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Bayside"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Bayside"
         }
       },
       {
@@ -135642,8 +135645,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "River Hills"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "River Hills"
         }
       },
       {
@@ -135699,8 +135702,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "River Hills"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "River Hills"
         }
       },
       {
@@ -135752,8 +135755,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Fox Point"
+              "properties": {
+          "SafetyIndex": 7,  "MuniName": "Fox Point"
         }
       },
       {
@@ -135801,8 +135804,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Fox Point"
+              "properties": {
+          "SafetyIndex": 7,  "MuniName": "Fox Point"
         }
       },
       {
@@ -136610,8 +136613,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Bayside"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Bayside"
         }
       },
       {
@@ -137683,8 +137686,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Fox Point"
+              "properties": {
+          "SafetyIndex": 7,  "MuniName": "Fox Point"
         }
       },
       {
@@ -140308,8 +140311,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Fox Point"
+              "properties": {
+          "SafetyIndex": 7,  "MuniName": "Fox Point"
         }
       },
       {
@@ -140357,8 +140360,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Glendale"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Glendale"
         }
       },
       {
@@ -140410,8 +140413,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Glendale"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Glendale"
         }
       },
       {
@@ -140463,8 +140466,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Glendale"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Glendale"
         }
       },
       {
@@ -140512,8 +140515,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Glendale"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Glendale"
         }
       },
       {
@@ -142941,8 +142944,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Fox Point"
+              "properties": {
+          "SafetyIndex": 7,  "MuniName": "Fox Point"
         }
       },
       {
@@ -147126,8 +147129,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Whitefish Bay"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Whitefish Bay"
         }
       },
       {
@@ -147175,8 +147178,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Glendale"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Glendale"
         }
       },
       {
@@ -147224,8 +147227,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Glendale"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Glendale"
         }
       },
       {
@@ -147277,8 +147280,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Milwaukee"
+              "properties": {
+          "SafetyIndex": 6,  "MuniName": "Milwaukee"
         }
       },
       {
@@ -147334,8 +147337,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Glendale"
+              "properties": {
+          "SafetyIndex": 8,  "MuniName": "Glendale"
         }
       },
       {
@@ -147919,8 +147922,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Whitefish Bay"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Whitefish Bay"
         }
       },
       {
@@ -150956,8 +150959,8 @@ export const json = {
             ]
           ]
         },
-        "properties": {
-          "MuniName": "Whitefish Bay"
+              "properties": {
+          "SafetyIndex": 9,  "MuniName": "Whitefish Bay"
         }
       }
     ]

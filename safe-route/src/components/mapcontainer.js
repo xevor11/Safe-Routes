@@ -12,8 +12,8 @@ import CenterButton from './center-button';
 import MapTap from './map-tap';
 
 
-const MapCont = () => {
 
+const MapCont = () => {
   const getLocationHook = useLocation()
   //extrapolate object from useContext hook
   const location = getLocationHook.location
