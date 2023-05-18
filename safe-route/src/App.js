@@ -8,6 +8,7 @@ import TopBar from './components/topbar';
 import { LocationContextProvider } from './components/LocationProvider';
 import { ThemeContextProvider } from './components/theme';
 import { RegionContextProvider } from './components/region';
+import CenterButton from './components/center-button';
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
               <SearchBar />
               <TopBar />
             </Stack>
-            <>
-              <MapCont />
+            <>                            
+              <CenterButton/>
+              <MapCont />          
             </>
           </Stack>
         </LocationContextProvider>

@@ -18,8 +18,7 @@ export default function TopBar() {
         
         <nav className="bar">{safeRoute}
             <SettingsMenu className="menu"></SettingsMenu>
-            
-            <AuthenticationButton id="authButton"/>
+            <AuthenticationButton className="authButton"/>
         </nav>
     )
 }
