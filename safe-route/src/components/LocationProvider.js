@@ -25,7 +25,7 @@ export function LocationContextProvider({ children }) {
     const [location, setLocation] = useState({
         userCoords: { lat: 43.075647, lng: -87.886633 },
         destCoords: { lat: null, lng: null },
-        centerCoords: { lat: 48.858372, lng: 2.294481 },
+        centerCoords: { lat: 43.075647, lng: -87.886633 },
         safetyIndex: null // add the safetyIndex attribute
     });
 
