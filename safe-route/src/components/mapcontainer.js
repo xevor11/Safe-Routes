@@ -1,6 +1,6 @@
 import React from 'react';
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Polygon, } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Polygon,Popup } from 'react-leaflet';
 import { currentLocIcon } from './icons/loc-icon';
 import Recenter from './recenter';
 import RoutingMachine from './Routes';
@@ -31,7 +31,7 @@ const MapCont = () => {
           url={theme.url}
           accessToken={appsettings.jawg_key}
         />
-        <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
+        <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ><Popup>You are here!</Popup></Marker>
         <Recenter lat={location.centerCoords.lat} lng={location.centerCoords.lng}></Recenter>
         <Polygon positions={region} pathOptions={{ color: "red", safetyIndex: location.safetyIndex }} />
         <MapTap></MapTap>
@@ -46,7 +46,7 @@ const MapCont = () => {
           url={theme.url}
           accessToken={appsettings.jawg_key}
         />
-        <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ></Marker>
+        <Marker position={[location.userCoords.lat, location.userCoords.lng]} icon={currentLocIcon} ><Popup>You are here!</Popup></Marker>
         <Recenter lat={location.centerCoords.lat} lng={location.centerCoords.lng}></Recenter>
         <Polygon positions={region} pathOptions={{ color: "red", safetyIndex: location.safetyIndex }} />
         <MapTap></MapTap>

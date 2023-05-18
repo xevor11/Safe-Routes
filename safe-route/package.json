@@ -35,6 +35,7 @@
     "react-map-gl": "^7.0.21",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "sweetalert": "^2.1.2",
     "turf-inside": "^3.0.12",
     "turf-multipolygon": "^1.0.1",
     "turf-point": "^2.0.1",
