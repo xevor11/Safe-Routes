@@ -2,6 +2,7 @@
 // import booleanPointInPolygon from '@turf/boolean-point-in-polygon';
 import * as turf from '@turf/turf';
 import { json } from './GeoJSonOBJ';
+import swal from 'sweetalert';
 
 
 var safetyrate = 0;
@@ -74,11 +75,24 @@ var result = instance.on('routeselected',function(e)
         console.log("Number of Cities entered: " + counter);
         if(safetyrate === 0)
         {
-          alert("Your route must travel through the Milwaukee area in order for a safety index to be calculated.");
+          swal("Your route must travel through the Milwaukee area in order for a safety index to be calculated.",
+          {
+            button:"Ok, Thanks",
+            icon: "error"
+          }
+          
+          
+          );
         }
         else {
           
-          alert("Your Safety Index for this route is: " + mathstuff(safetyrate, counter));
+          swal( 
+          {
+            text:""+mathstuff(safetyrate, counter),
+            title:"Your Safety Index for this route is:",
+            button: "Ok, Thanks",
+            icon: "info"
+          });
           
         }
         safetyrate = 0;
