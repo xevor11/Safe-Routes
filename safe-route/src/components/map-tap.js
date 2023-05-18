@@ -14,7 +14,7 @@ const MapTap = () => {
         useCenter(center)
     }
 
-    map.on('click drag', () => {
+    map.on('click drag touchstart touchmove touchend', () => {
         OnClick();
     });
     return null;

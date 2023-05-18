@@ -6,7 +6,7 @@ import { useCenterLocationUpdate } from './LocationProvider';
 
 const ButtonContainer = styled('div')({
     position: 'fixed',
-    bottom: '10vh', // Adjust the distance from the bottom as needed
+    bottom: '10vh',
     left: '50%',
     transform: 'translateX(-50%)',
     display: 'flex',
@@ -31,7 +31,7 @@ const CenterButton = () => {
             <Button variant="contained" color="primary"
                 onClick={UpdateCoords}
             >
-                CENTER
+                Center
             </Button>
         </ButtonContainer>
     );
