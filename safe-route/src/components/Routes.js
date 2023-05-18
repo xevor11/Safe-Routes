@@ -2,8 +2,11 @@ import L from "leaflet";
 import { createControlComponent } from "@react-leaflet/core";
 import "leaflet-routing-machine";
 import { useLocation } from "./LocationProvider";
-import {regioncheck} from "./RegionCross";
+import { regioncheck } from "./RegionCross";
+import { destinationIcon } from "./icons/dest-icon";
+
 var instance;
+
 const Routes = () => {
 
   const getLocationHook = useLocation()
@@ -19,17 +22,15 @@ const Routes = () => {
       lineOptions: {
         styles: [{ color: "#6FA1EC", weight: 4 }]
       },
-      createMarker: function () { return null; },
-      show: true,
+      createMarker: function () {
+        return L.marker(L.latLng(location.destCoords.lat, location.destCoords.lng), { icon: destinationIcon });
+      },
       addWaypoints: false,
       routeWhileDragging: true,
       draggableWaypoints: true,
       fitSelectedRoutes: true,
     });
-    console.log(typeof instance);
- regioncheck(instance);
-    
-    
+    regioncheck(instance);
 
     return instance;
   }

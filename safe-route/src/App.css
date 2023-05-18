@@ -28,8 +28,14 @@ button {
   }
 }
 
+table {
+  display: none;
+}
 
+h3 {
+  display: none;
+}
 
-.leaflet-control-container .leaflet-routing-container-hide {
+h2 {
   display: none;
 }

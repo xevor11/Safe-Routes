@@ -4,6 +4,8 @@ const LocationContext = createContext();
 const UpdateUserLocationContext = createContext();
 const UpdateCenterLocationContext = createContext();
 const UpdateDestLocationContext = createContext();
+const UpdateCentered = createContext();
+
 
 export function useLocation() {
     return useContext(LocationContext)
@@ -11,6 +13,10 @@ export function useLocation() {
 
 export function useCenterLocationUpdate() {
     return useContext(UpdateCenterLocationContext)
+}
+
+export function useCenteredUpdate() {
+    return useContext(UpdateCentered)
 }
 
 export function useUserLocationUpdate() {
@@ -26,16 +32,20 @@ export function LocationContextProvider({ children }) {
         userCoords: { lat: 43.075647, lng: -87.886633 },
         destCoords: { lat: null, lng: null },
         centerCoords: { lat: 43.075647, lng: -87.886633 },
-        safetyIndex: null // add the safetyIndex attribute
+        safetyIndex: null, // add the safetyIndex attribute
+        centered: true
     });
 
     useEffect(() => {
         if (navigator.geolocation) {
+
             const successCallback = (position) => {
-                if ((location.centerCoords.lat === location.userCoords.lat) && (location.centerCoords.lng === location.userCoords.lng)) {
-                    setLocation(prevState => ({ ...prevState, userCoords: { lat: position.coords.latitude, lng: position.coords.longitude }, centerCoords: { lat: position.coords.latitude, lng: position.coords.longitude } }));
+
+                if (location.centered) {                    
+                    setLocation((prevState) => ({ ...prevState, userCoords: { lat: position.coords.latitude, lng: position.coords.longitude }, centerCoords: { lat: position.coords.latitude, lng: position.coords.longitude } }));
+
                 } else {
-                    setLocation(prevState => ({ ...prevState, userCoords: { lat: position.coords.latitude, lng: position.coords.longitude } }));
+                    setLocation((prevState) => ({ ...prevState, userCoords: { lat: position.coords.latitude, lng: position.coords.longitude } }));
                 }
             }
 
@@ -52,16 +62,20 @@ export function LocationContextProvider({ children }) {
         }
     }, [location]);
 
-    function updateCenterCoords(newCoords) {        
-        setLocation(prevState => ({ ...prevState, centerCoords: newCoords }));        
+    function updateCenterCoords(newCoords) {
+        setLocation((prevState) => ({ ...prevState, centerCoords: newCoords}));
     }
 
     function updateUserCoords(newCoords) {
-        setLocation(prevState => ({ ...prevState, userCoords: newCoords }));
+        setLocation((prevState) => ({ ...prevState, userCoords: newCoords }));
+    }
+
+    function updateCentered(bool) {
+        location.centered = bool
     }
 
     function updateDestCoords(newCoords) {
-        setLocation(prevState => ({
+        setLocation((prevState) => ({
             ...prevState,
             destCoords: newCoords,
             safetyIndex: 0 // set a default value for safetyIndex
@@ -73,9 +87,11 @@ export function LocationContextProvider({ children }) {
 
             <UpdateUserLocationContext.Provider value={updateUserCoords}>
                 <UpdateDestLocationContext.Provider value={updateDestCoords}>
-                    <UpdateCenterLocationContext.Provider value={updateCenterCoords}>
-                        {children}
-                    </UpdateCenterLocationContext.Provider>
+                    <UpdateCentered.Provider value={updateCentered}>
+                        <UpdateCenterLocationContext.Provider value={updateCenterCoords}>
+                            {children}
+                        </UpdateCenterLocationContext.Provider>
+                    </UpdateCentered.Provider>
                 </UpdateDestLocationContext.Provider>
             </UpdateUserLocationContext.Provider>
 
