@@ -8,7 +8,6 @@ import { useLocation } from './LocationProvider';
 import appsettings from './../appsettings.json';
 import { useTheme } from './theme';
 import { useRegion } from './region';
-import CenterButton from './center-button';
 import MapTap from './map-tap';
 
 
