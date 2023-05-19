@@ -24,8 +24,7 @@ const MapCont = () => {
 
   if (location.destCoords.lat) {
     return (
-      location.userCoords === location.centerCoords ? <CenterButton /> : null,
-      <MapContainer center={[location.userCoords.lat, location.userCoords.lng]} zoom={12} style={{ width: "100%", height: "100vh", zIndex: 0 }} >
+      <MapContainer center={[location.userCoords.lat, location.userCoords.lng]} zoom={12} style={{ width: "100%", height: "100vh", zIndex: 0, position: "fixed" }} >
         <TileLayer
           attribution={theme.attribution}
           url={theme.url}
